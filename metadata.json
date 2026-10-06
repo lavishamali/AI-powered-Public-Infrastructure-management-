@@ -1,0 +1,6 @@
+{
+  "name": "CivicVision AI",
+  "description": "AI-Powered Public Infrastructure Monitoring & Prioritization System: Detect, Verify, Prioritize, and Resolve civic infrastructure issues.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

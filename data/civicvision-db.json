@@ -1,0 +1,3568 @@
+{
+  "incidents": [
+    {
+      "id": "INC-2026-101",
+      "issueType": "Pothole",
+      "title": "Severe Asphalt Crater in School Transit Lane",
+      "location": {
+        "lat": 37.778400000000005,
+        "lng": -122.42219999999999,
+        "address": "240 Elm St (Westside Elementary Zone)",
+        "zone": "School Zone",
+        "landmark": "Westside Elementary School"
+      },
+      "severityScore": 88,
+      "severityLevel": "Critical",
+      "priorityScore": 94,
+      "priorityLevel": "Critical",
+      "priorityFactors": [
+        {
+          "factor": "Visual & Structural Severity",
+          "weight": 0.4,
+          "score": 88,
+          "contribution": 35,
+          "explanation": "Deep cavity (>14cm depth) with expanding perimeter fracture."
+        },
+        {
+          "factor": "Citizen Corroboration & Report Count",
+          "weight": 0.2,
+          "score": 92,
+          "contribution": 18,
+          "explanation": "4 independent citizen reports logged within 24 hours."
+        },
+        {
+          "factor": "Critical Location & Transit Density",
+          "weight": 0.15,
+          "score": 95,
+          "contribution": 14,
+          "explanation": "Designated School Zone with active school bus and pedestrian crossings."
+        },
+        {
+          "factor": "Chronic Recurrence History",
+          "weight": 0.1,
+          "score": 80,
+          "contribution": 8,
+          "explanation": "2 prior temporary patch failures logged at this intersection."
+        },
+        {
+          "factor": "Public Safety & Transit Impact",
+          "weight": 0.15,
+          "score": 94,
+          "contribution": 14,
+          "explanation": "High vehicular evasive maneuver risk threatening crossing children."
+        }
+      ],
+      "reportCount": 4,
+      "sourceReportIds": [
+        "REP-2026-201",
+        "REP-2026-202",
+        "REP-2026-203",
+        "REP-2026-204"
+      ],
+      "sourceReports": [
+        {
+          "id": "REP-2026-201",
+          "timestamp": "2026-10-04T08:15:00Z",
+          "imageUrl": "https://images.unsplash.com/photo-1515162816999-a0c47dc192f7?auto=format&fit=crop&w=800&q=80",
+          "description": "Huge pothole right outside Westside Elementary school gate. A minivan scraped its bumper dropping off students.",
+          "location": {
+            "lat": 37.778400000000005,
+            "lng": -122.42219999999999,
+            "address": "240 Elm St, near Westside Elementary Gate 1",
+            "zone": "School Zone",
+            "landmark": "Westside Elementary School"
+          },
+          "aiAnalysis": {
+            "detectedIssue": "Pothole",
+            "confidence": 96,
+            "observations": "Substantial asphalt depression (~14cm depth, 65cm width) with jagged aggregate edges directly in primary school dropoff lane.",
+            "estimatedDamageLevel": "Severe",
+            "hazardClassification": "Severe vehicular rim impact and student crossing danger",
+            "detectedRegions": [
+              {
+                "x": 22,
+                "y": 38,
+                "width": 56,
+                "height": 42,
+                "label": "Deep asphalt cavity"
+              }
+            ],
+            "isRealAiCall": true,
+            "modelUsed": "gemini-3.8-flash"
+          },
+          "severity": {
+            "score": 88,
+            "level": "Critical",
+            "contributingFactors": [
+              {
+                "factor": "Infrastructure Baseline",
+                "impact": 65,
+                "description": "Pothole on active transit corridor"
+              },
+              {
+                "factor": "Visual Damage Extent",
+                "impact": 18,
+                "description": "Severe cratering with exposed base gravel"
+              },
+              {
+                "factor": "Zone Vulnerability",
+                "impact": 14,
+                "description": "School Zone: Child pedestrian vulnerability"
+              }
+            ]
+          },
+          "linkedIncidentId": "INC-2026-101",
+          "status": "Verified",
+          "isDemo": true
+        },
+        {
+          "id": "REP-2026-202",
+          "timestamp": "2026-10-04T09:40:00Z",
+          "imageUrl": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=800&q=80",
+          "description": "Deep crater on Elm Street by the school crosswalk. Cyclist almost fell this morning.",
+          "location": {
+            "lat": 37.7785,
+            "lng": -122.4221,
+            "address": "248 Elm St, near crosswalk",
+            "zone": "School Zone",
+            "landmark": "School Pedestrian Crosswalk"
+          },
+          "aiAnalysis": {
+            "detectedIssue": "Pothole",
+            "confidence": 94,
+            "observations": "Pothole along pedestrian crossing approach with severe asphalt loss and loose gravel.",
+            "estimatedDamageLevel": "Severe",
+            "hazardClassification": "Cyclist spill hazard and vehicle wheel damage",
+            "detectedRegions": [
+              {
+                "x": 28,
+                "y": 40,
+                "width": 48,
+                "height": 38,
+                "label": "Road crater"
+              }
+            ],
+            "isRealAiCall": true,
+            "modelUsed": "gemini-3.8-flash"
+          },
+          "severity": {
+            "score": 87,
+            "level": "Critical",
+            "contributingFactors": [
+              {
+                "factor": "Infrastructure Baseline",
+                "impact": 65,
+                "description": "Pothole baseline hazard"
+              },
+              {
+                "factor": "Visual Damage Extent",
+                "impact": 18,
+                "description": "Severe road surface puncture"
+              },
+              {
+                "factor": "Zone Vulnerability",
+                "impact": 14,
+                "description": "School Zone proximity"
+              }
+            ]
+          },
+          "linkedIncidentId": "INC-2026-101",
+          "isDuplicate": true,
+          "duplicateProbability": 95,
+          "matchingFactors": [
+            "Geospatial proximity: 18m from INC-2026-101",
+            "Identical hazard type: Pothole",
+            "Corroborating landmarks: \"school\", \"crosswalk\""
+          ],
+          "status": "Verified",
+          "isDemo": true
+        },
+        {
+          "id": "REP-2026-203",
+          "timestamp": "2026-10-04T13:20:00Z",
+          "imageUrl": "https://images.unsplash.com/photo-1515162816999-a0c47dc192f7?auto=format&fit=crop&w=800&q=80",
+          "description": "Broken pavement crater outside school gate 2. Water accumulating inside it.",
+          "location": {
+            "lat": 37.7783,
+            "lng": -122.42229999999999,
+            "address": "Elm St opposite Gate 2",
+            "zone": "School Zone",
+            "landmark": "Westside Gate 2"
+          },
+          "aiAnalysis": {
+            "detectedIssue": "Pothole",
+            "confidence": 91,
+            "observations": "Submerged pothole crater causing puddle formation and hidden wheel hazard.",
+            "estimatedDamageLevel": "Severe",
+            "hazardClassification": "Concealed cavity danger",
+            "isRealAiCall": true,
+            "modelUsed": "gemini-3.8-flash"
+          },
+          "severity": {
+            "score": 88,
+            "level": "Critical",
+            "contributingFactors": [
+              {
+                "factor": "Infrastructure Baseline",
+                "impact": 65,
+                "description": "Pothole baseline"
+              },
+              {
+                "factor": "Visual Damage Extent",
+                "impact": 18,
+                "description": "Severe cavity with standing water"
+              },
+              {
+                "factor": "Zone Vulnerability",
+                "impact": 14,
+                "description": "School Zone hazard"
+              }
+            ]
+          },
+          "linkedIncidentId": "INC-2026-101",
+          "isDuplicate": true,
+          "duplicateProbability": 92,
+          "matchingFactors": [
+            "Geospatial proximity: 24m from INC-2026-101",
+            "Matching issue: Pothole",
+            "Matching civic zone: School Zone"
+          ],
+          "status": "Verified",
+          "isDemo": true
+        },
+        {
+          "id": "REP-2026-204",
+          "timestamp": "2026-10-05T07:50:00Z",
+          "imageUrl": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=800&q=80",
+          "description": "School bus had to swerve around large pothole on Elm. Very dangerous during morning rush.",
+          "location": {
+            "lat": 37.778400000000005,
+            "lng": -122.42219999999999,
+            "address": "240 Elm St",
+            "zone": "School Zone",
+            "landmark": "Westside Elementary"
+          },
+          "aiAnalysis": {
+            "detectedIssue": "Pothole",
+            "confidence": 95,
+            "observations": "Road pothole cavity in center of westbound traffic lane.",
+            "estimatedDamageLevel": "Severe",
+            "hazardClassification": "Transit vehicle evasion risk",
+            "isRealAiCall": true,
+            "modelUsed": "gemini-3.8-flash"
+          },
+          "severity": {
+            "score": 88,
+            "level": "Critical",
+            "contributingFactors": [
+              {
+                "factor": "Infrastructure Baseline",
+                "impact": 65,
+                "description": "Pothole baseline"
+              },
+              {
+                "factor": "Visual Damage Extent",
+                "impact": 18,
+                "description": "Severe road cavity"
+              },
+              {
+                "factor": "Zone Vulnerability",
+                "impact": 14,
+                "description": "School Zone"
+              }
+            ]
+          },
+          "linkedIncidentId": "INC-2026-101",
+          "isDuplicate": true,
+          "duplicateProbability": 98,
+          "matchingFactors": [
+            "Geospatial proximity: 6m from INC-2026-101",
+            "Matching issue: Pothole",
+            "Keyword match: \"school bus\", \"Elm\", \"pothole\""
+          ],
+          "status": "Verified",
+          "isDemo": true
+        }
+      ],
+      "status": "Verified",
+      "createdAt": "2026-10-04T08:15:00Z",
+      "updatedAt": "2026-10-05T07:55:00Z",
+      "recurrenceCount": 2,
+      "aiExplanation": {
+        "summary": "Priority is Critical (94/100) because the verified 14cm pothole poses an imminent road hazard inside a designated School Zone and has been corroborated by 4 independent citizen reports within 24 hours.",
+        "recommendedAction": "Dispatch Rapid Road Repair Unit with hot-mix asphalt and establish safety cones immediately.",
+        "generatedAt": "2026-10-05T07:55:00Z",
+        "modelUsed": "gemini-3.8-flash"
+      },
+      "timeline": [
+        {
+          "id": "TL-101-1",
+          "timestamp": "2026-10-04T08:15:00Z",
+          "status": "Pending",
+          "actor": "Citizen Ingestion Pipeline",
+          "notes": "Initial citizen report REP-2026-201 submitted with photo evidence."
+        },
+        {
+          "id": "TL-101-2",
+          "timestamp": "2026-10-04T09:40:00Z",
+          "status": "Pending",
+          "actor": "CivicVision Duplicate Engine",
+          "notes": "Consolidated report REP-2026-202 (18m distance, 95% confidence)."
+        },
+        {
+          "id": "TL-101-3",
+          "timestamp": "2026-10-04T13:20:00Z",
+          "status": "Pending",
+          "actor": "CivicVision Duplicate Engine",
+          "notes": "Consolidated report REP-2026-203. Priority escalated to 89."
+        },
+        {
+          "id": "TL-101-4",
+          "timestamp": "2026-10-05T08:00:00Z",
+          "status": "Verified",
+          "actor": "Municipal Dispatcher Roberts",
+          "notes": "Incident verified by supervisor. Escalated to Critical priority 94. Dispatched to District 2 road crew."
+        }
+      ],
+      "assignedCrew": "District 2 Asphalt Maintenance Crew",
+      "isDemo": true
+    },
+    {
+      "id": "INC-2026-102",
+      "issueType": "Overflowing Drain",
+      "title": "Sanitary Sewer Backflow & Street Flooding at Market Plaza",
+      "location": {
+        "lat": 37.770700000000005,
+        "lng": -122.41629999999999,
+        "address": "520 Market St (Market Plaza Corridor)",
+        "zone": "Commercial Center",
+        "landmark": "Central Market Plaza"
+      },
+      "severityScore": 86,
+      "severityLevel": "Critical",
+      "priorityScore": 89,
+      "priorityLevel": "Critical",
+      "priorityFactors": [
+        {
+          "factor": "Visual & Structural Severity",
+          "weight": 0.4,
+          "score": 86,
+          "contribution": 34,
+          "explanation": "Contaminated blackwater overflow."
+        },
+        {
+          "factor": "Citizen Corroboration & Report Count",
+          "weight": 0.2,
+          "score": 80,
+          "contribution": 16,
+          "explanation": "3 independent citizen reports verified."
+        },
+        {
+          "factor": "Critical Location & Transit Density",
+          "weight": 0.15,
+          "score": 72,
+          "contribution": 11,
+          "explanation": "Commercial center with high pedestrian footfall."
+        },
+        {
+          "factor": "Chronic Recurrence History",
+          "weight": 0.1,
+          "score": 55,
+          "contribution": 6,
+          "explanation": "1 prior grease blockage logged last month."
+        },
+        {
+          "factor": "Public Safety & Transit Impact",
+          "weight": 0.15,
+          "score": 88,
+          "contribution": 13,
+          "explanation": "Biohazard exposure and bus boarding disruption."
+        }
+      ],
+      "reportCount": 3,
+      "sourceReportIds": [
+        "REP-2026-205",
+        "REP-2026-206",
+        "REP-2026-207"
+      ],
+      "sourceReports": [
+        {
+          "id": "REP-2026-205",
+          "timestamp": "2026-10-04T11:00:00Z",
+          "imageUrl": "https://images.unsplash.com/photo-1541888946425-d0fbb1861593?auto=format&fit=crop&w=800&q=80",
+          "description": "Stormwater drain overflowing with foul sewage water near Market Plaza entrance. Water spreading across sidewalk.",
+          "location": {
+            "lat": 37.770700000000005,
+            "lng": -122.41629999999999,
+            "address": "520 Market St, Market Plaza",
+            "zone": "Commercial Center",
+            "landmark": "Central Market Plaza"
+          },
+          "aiAnalysis": {
+            "detectedIssue": "Overflowing Drain",
+            "confidence": 97,
+            "observations": "Submerged drain grate with heavy effluent backflow, oily residue, and localized sidewalk flooding.",
+            "estimatedDamageLevel": "Severe",
+            "hazardClassification": "Public health biohazard and retail corridor water damage",
+            "isRealAiCall": true,
+            "modelUsed": "gemini-3.8-flash"
+          },
+          "severity": {
+            "score": 86,
+            "level": "Critical",
+            "contributingFactors": [
+              {
+                "factor": "Infrastructure Baseline",
+                "impact": 70,
+                "description": "Drainage overflow sanitation hazard"
+              },
+              {
+                "factor": "Visual Damage Extent",
+                "impact": 18,
+                "description": "Active backflow and standing contaminated water"
+              },
+              {
+                "factor": "Zone Vulnerability",
+                "impact": 6,
+                "description": "Commercial retail center foot traffic"
+              }
+            ]
+          },
+          "linkedIncidentId": "INC-2026-102",
+          "status": "Assigned",
+          "isDemo": true
+        },
+        {
+          "id": "REP-2026-206",
+          "timestamp": "2026-10-04T14:15:00Z",
+          "imageUrl": "https://images.unsplash.com/photo-1541888946425-d0fbb1861593?auto=format&fit=crop&w=800&q=80",
+          "description": "Terrible smell and dirty water bubbling out of the sewer on Market Street in front of the bakery.",
+          "location": {
+            "lat": 37.7708,
+            "lng": -122.4161,
+            "address": "528 Market St",
+            "zone": "Commercial Center",
+            "landmark": "Market Plaza Bakery"
+          },
+          "aiAnalysis": {
+            "detectedIssue": "Overflowing Drain",
+            "confidence": 93,
+            "observations": "Sewer backflow emerging around curb gutter with visible debris.",
+            "estimatedDamageLevel": "Severe",
+            "hazardClassification": "Urban drainage blockage and retail contamination",
+            "isRealAiCall": true,
+            "modelUsed": "gemini-3.8-flash"
+          },
+          "severity": {
+            "score": 86,
+            "level": "Critical",
+            "contributingFactors": [
+              {
+                "factor": "Infrastructure Baseline",
+                "impact": 70,
+                "description": "Drainage hazard"
+              },
+              {
+                "factor": "Visual Damage Extent",
+                "impact": 18,
+                "description": "Severe runoff"
+              },
+              {
+                "factor": "Zone Vulnerability",
+                "impact": 6,
+                "description": "Commercial Center"
+              }
+            ]
+          },
+          "linkedIncidentId": "INC-2026-102",
+          "isDuplicate": true,
+          "duplicateProbability": 91,
+          "matchingFactors": [
+            "Geospatial proximity: 22m",
+            "Issue match: Overflowing Drain",
+            "Shared landmark: Market Street"
+          ],
+          "status": "Assigned",
+          "isDemo": true
+        },
+        {
+          "id": "REP-2026-207",
+          "timestamp": "2026-10-05T08:30:00Z",
+          "imageUrl": "https://images.unsplash.com/photo-1541888946425-d0fbb1861593?auto=format&fit=crop&w=800&q=80",
+          "description": "Sewer water has flooded the bus boarding curb. Pedestrians forced into vehicle traffic.",
+          "location": {
+            "lat": 37.7706,
+            "lng": -122.4164,
+            "address": "516 Market St Bus Stop",
+            "zone": "Commercial Center",
+            "landmark": "Market Plaza Transit Stop"
+          },
+          "aiAnalysis": {
+            "detectedIssue": "Overflowing Drain",
+            "confidence": 96,
+            "observations": "Extensive curb pooling obstructing public bus boarding landing.",
+            "estimatedDamageLevel": "Severe",
+            "hazardClassification": "Transit boarding obstruction and slip risk",
+            "isRealAiCall": true,
+            "modelUsed": "gemini-3.8-flash"
+          },
+          "severity": {
+            "score": 86,
+            "level": "Critical",
+            "contributingFactors": [
+              {
+                "factor": "Infrastructure Baseline",
+                "impact": 70,
+                "description": "Drainage overflow"
+              },
+              {
+                "factor": "Visual Damage Extent",
+                "impact": 18,
+                "description": "Severe flooding"
+              },
+              {
+                "factor": "Zone Vulnerability",
+                "impact": 6,
+                "description": "Commercial/Transit curb"
+              }
+            ]
+          },
+          "linkedIncidentId": "INC-2026-102",
+          "isDuplicate": true,
+          "duplicateProbability": 89,
+          "matchingFactors": [
+            "Geospatial proximity: 19m",
+            "Identical classification: Overflowing Drain"
+          ],
+          "status": "Assigned",
+          "isDemo": true
+        }
+      ],
+      "status": "Assigned",
+      "createdAt": "2026-10-04T11:00:00Z",
+      "updatedAt": "2026-10-05T09:00:00Z",
+      "recurrenceCount": 1,
+      "aiExplanation": {
+        "summary": "Priority is Critical (89/100) due to severe sanitary sewer overflow impacting a commercial transit curb, confirmed by 3 citizen submissions, creating active biological contamination.",
+        "recommendedAction": "Deploy high-pressure hydraulic jetting truck and vacuum pump to clear municipal mainline blockage.",
+        "generatedAt": "2026-10-05T09:00:00Z",
+        "modelUsed": "gemini-3.8-flash"
+      },
+      "timeline": [
+        {
+          "id": "TL-102-1",
+          "timestamp": "2026-10-04T11:00:00Z",
+          "status": "Pending",
+          "actor": "Citizen Portal",
+          "notes": "First report logged with photo evidence."
+        },
+        {
+          "id": "TL-102-2",
+          "timestamp": "2026-10-04T14:15:00Z",
+          "status": "Verified",
+          "actor": "Automated Consolidation",
+          "notes": "Consolidated report REP-2026-206. Score raised to 85."
+        },
+        {
+          "id": "TL-102-3",
+          "timestamp": "2026-10-05T09:10:00Z",
+          "status": "Assigned",
+          "actor": "Water & Sewer Dept Supervisor Lee",
+          "notes": "Assigned to Environmental Response Team #7 for urgent jetting."
+        }
+      ],
+      "assignedCrew": "Sanitation & Sewer Response Team #7",
+      "isDemo": true
+    },
+    {
+      "id": "INC-2026-103",
+      "issueType": "Broken Streetlight",
+      "title": "Dislodged Luminaire & Multi-Pole Blackout on Pinehurst",
+      "location": {
+        "lat": 37.78,
+        "lng": -122.4152,
+        "address": "810 Pinehurst Ave",
+        "zone": "Residential Area",
+        "landmark": "Pinehurst Park Corridor"
+      },
+      "severityScore": 65,
+      "severityLevel": "High",
+      "priorityScore": 74,
+      "priorityLevel": "High",
+      "priorityFactors": [
+        {
+          "factor": "Visual & Structural Severity",
+          "weight": 0.4,
+          "score": 65,
+          "contribution": 26,
+          "explanation": "Dislodged luminaire bracket with live wire risk."
+        },
+        {
+          "factor": "Citizen Corroboration & Report Count",
+          "weight": 0.2,
+          "score": 80,
+          "contribution": 16,
+          "explanation": "3 independent reports from park neighborhood."
+        },
+        {
+          "factor": "Critical Location & Transit Density",
+          "weight": 0.15,
+          "score": 55,
+          "contribution": 8,
+          "explanation": "Residential corridor adjoining community park."
+        },
+        {
+          "factor": "Chronic Recurrence History",
+          "weight": 0.1,
+          "score": 55,
+          "contribution": 6,
+          "explanation": "1 prior ballast repair on this transformer circuit."
+        },
+        {
+          "factor": "Public Safety & Transit Impact",
+          "weight": 0.15,
+          "score": 68,
+          "contribution": 10,
+          "explanation": "Overhead drop hazard and nocturnal pedestrian blind spot."
+        }
+      ],
+      "reportCount": 3,
+      "sourceReportIds": [
+        "REP-2026-208",
+        "REP-2026-209",
+        "REP-2026-210"
+      ],
+      "sourceReports": [
+        {
+          "id": "REP-2026-208",
+          "timestamp": "2026-10-03T20:30:00Z",
+          "imageUrl": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=800&q=80",
+          "description": "Streetlight pole #12 is completely black on Pinehurst Ave. Entire block is pitch dark.",
+          "location": {
+            "lat": 37.78,
+            "lng": -122.4152,
+            "address": "810 Pinehurst Ave",
+            "zone": "Residential Area",
+            "landmark": "Pinehurst Park Corner"
+          },
+          "aiAnalysis": {
+            "detectedIssue": "Broken Streetlight",
+            "confidence": 94,
+            "observations": "Non-functioning sodium luminaire fixture resulting in zero ground illumination at cross street.",
+            "estimatedDamageLevel": "Moderate",
+            "hazardClassification": "Nocturnal blindspot and pedestrian personal safety vulnerability",
+            "isRealAiCall": true,
+            "modelUsed": "gemini-3.8-flash"
+          },
+          "severity": {
+            "score": 47,
+            "level": "Medium",
+            "contributingFactors": [
+              {
+                "factor": "Infrastructure Baseline",
+                "impact": 45,
+                "description": "Broken streetlight baseline hazard"
+              },
+              {
+                "factor": "Visual Damage Extent",
+                "impact": 0,
+                "description": "Moderate outage profile"
+              },
+              {
+                "factor": "Zone Vulnerability",
+                "impact": 2,
+                "description": "Residential street context"
+              }
+            ]
+          },
+          "linkedIncidentId": "INC-2026-103",
+          "status": "In Progress",
+          "isDemo": true
+        },
+        {
+          "id": "REP-2026-209",
+          "timestamp": "2026-10-04T21:10:00Z",
+          "imageUrl": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=800&q=80",
+          "description": "Pitch dark corner on Pinehurst near the playground. Residents feel unsafe walking dogs after 7pm.",
+          "location": {
+            "lat": 37.780100000000004,
+            "lng": -122.4151,
+            "address": "816 Pinehurst Ave",
+            "zone": "Residential Area",
+            "landmark": "Pinehurst Community Playground"
+          },
+          "aiAnalysis": {
+            "detectedIssue": "Broken Streetlight",
+            "confidence": 92,
+            "observations": "Extinguished street luminaire adjacent to public park path.",
+            "estimatedDamageLevel": "Moderate",
+            "hazardClassification": "Pedestrian nocturnal visibility hazard",
+            "isRealAiCall": true,
+            "modelUsed": "gemini-3.8-flash"
+          },
+          "severity": {
+            "score": 47,
+            "level": "Medium",
+            "contributingFactors": [
+              {
+                "factor": "Infrastructure Baseline",
+                "impact": 45,
+                "description": "Streetlight outage"
+              },
+              {
+                "factor": "Zone Vulnerability",
+                "impact": 2,
+                "description": "Residential Area"
+              }
+            ]
+          },
+          "linkedIncidentId": "INC-2026-103",
+          "isDuplicate": true,
+          "duplicateProbability": 94,
+          "matchingFactors": [
+            "Geospatial proximity: 15m",
+            "Issue match: Broken Streetlight",
+            "Shared landmark: Pinehurst"
+          ],
+          "status": "In Progress",
+          "isDemo": true
+        },
+        {
+          "id": "REP-2026-210",
+          "timestamp": "2026-10-05T06:15:00Z",
+          "imageUrl": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=800&q=80",
+          "description": "Streetlight pole head is dangling and unlit. Looks like high wind damaged the bracket.",
+          "location": {
+            "lat": 37.779900000000005,
+            "lng": -122.4153,
+            "address": "804 Pinehurst Ave",
+            "zone": "Residential Area",
+            "landmark": "Pinehurst Park Entrance"
+          },
+          "aiAnalysis": {
+            "detectedIssue": "Broken Streetlight",
+            "confidence": 95,
+            "observations": "Fixture bracket dislodged and unpowered luminaire head.",
+            "estimatedDamageLevel": "Severe",
+            "hazardClassification": "Structural overhead detachment risk and outage",
+            "isRealAiCall": true,
+            "modelUsed": "gemini-3.8-flash"
+          },
+          "severity": {
+            "score": 65,
+            "level": "High",
+            "contributingFactors": [
+              {
+                "factor": "Infrastructure Baseline",
+                "impact": 45,
+                "description": "Streetlight outage"
+              },
+              {
+                "factor": "Visual Damage Extent",
+                "impact": 18,
+                "description": "Detached luminaire fixture"
+              },
+              {
+                "factor": "Zone Vulnerability",
+                "impact": 2,
+                "description": "Residential Area"
+              }
+            ]
+          },
+          "linkedIncidentId": "INC-2026-103",
+          "isDuplicate": true,
+          "duplicateProbability": 88,
+          "matchingFactors": [
+            "Geospatial proximity: 21m",
+            "Issue match: Broken Streetlight"
+          ],
+          "status": "In Progress",
+          "isDemo": true
+        }
+      ],
+      "status": "In Progress",
+      "createdAt": "2026-10-03T20:30:00Z",
+      "updatedAt": "2026-10-05T07:15:00Z",
+      "recurrenceCount": 1,
+      "aiExplanation": {
+        "summary": "Priority is High (74/100) because the verified broken luminaire has a loose physical bracket presenting overhead hazard, aggravated by darkness on a public park sidewalk corroborated by 3 citizen submissions.",
+        "recommendedAction": "Dispatch bucket truck unit to re-anchor fixture bracket, replace LED luminaire module, and test ballast fuse.",
+        "generatedAt": "2026-10-05T07:15:00Z",
+        "modelUsed": "gemini-3.8-flash"
+      },
+      "timeline": [
+        {
+          "id": "TL-103-1",
+          "timestamp": "2026-10-03T20:30:00Z",
+          "status": "Pending",
+          "actor": "Citizen Portal",
+          "notes": "First report submitted."
+        },
+        {
+          "id": "TL-103-2",
+          "timestamp": "2026-10-04T22:00:00Z",
+          "status": "Verified",
+          "actor": "Night Shift Triage",
+          "notes": "Consolidated report REP-209. Priority updated to 68."
+        },
+        {
+          "id": "TL-103-3",
+          "timestamp": "2026-10-05T07:30:00Z",
+          "status": "In Progress",
+          "actor": "Power Utility Crew #2",
+          "notes": "Bucket truck on site. Repairing electrical conduit."
+        }
+      ],
+      "assignedCrew": "Municipal Electrical Grid Crew #2",
+      "isDemo": true
+    },
+    {
+      "id": "INC-2026-104",
+      "issueType": "Damaged Sidewalk",
+      "title": "Severe Heaved Concrete Slab & ADA Barrier at Metro Station",
+      "location": {
+        "lat": 37.7731,
+        "lng": -122.4249,
+        "address": "100 Metro Plaza (Exit B)",
+        "zone": "Transit Hub",
+        "landmark": "Civic Metro Station Exit B"
+      },
+      "severityScore": 80,
+      "severityLevel": "Critical",
+      "priorityScore": 84,
+      "priorityLevel": "Critical",
+      "priorityFactors": [
+        {
+          "factor": "Visual & Structural Severity",
+          "weight": 0.4,
+          "score": 80,
+          "contribution": 32,
+          "explanation": "7cm raised concrete slab offset creating major trip ledge."
+        },
+        {
+          "factor": "Citizen Corroboration & Report Count",
+          "weight": 0.2,
+          "score": 80,
+          "contribution": 16,
+          "explanation": "3 independent commuter reports including reported fall."
+        },
+        {
+          "factor": "Critical Location & Transit Density",
+          "weight": 0.15,
+          "score": 85,
+          "contribution": 13,
+          "explanation": "Designated Transit Hub with 12,000 daily foot commuters."
+        },
+        {
+          "factor": "Chronic Recurrence History",
+          "weight": 0.1,
+          "score": 55,
+          "contribution": 6,
+          "explanation": "1 prior root shaving completed in 2025."
+        },
+        {
+          "factor": "Public Safety & Transit Impact",
+          "weight": 0.15,
+          "score": 72,
+          "contribution": 11,
+          "explanation": "Immediate ADA wheelchair accessibility blockage."
+        }
+      ],
+      "reportCount": 3,
+      "sourceReportIds": [
+        "REP-2026-211",
+        "REP-2026-212",
+        "REP-2026-213"
+      ],
+      "sourceReports": [
+        {
+          "id": "REP-2026-211",
+          "timestamp": "2026-10-02T16:45:00Z",
+          "imageUrl": "https://images.unsplash.com/photo-1584463699042-45a8d9a4f4d2?auto=format&fit=crop&w=800&q=80",
+          "description": "Massive concrete sidewalk slab lifted by tree root outside Metro Station Exit B. Sits 3 inches high, seen multiple people trip.",
+          "location": {
+            "lat": 37.7731,
+            "lng": -122.4249,
+            "address": "100 Metro Plaza (Exit B)",
+            "zone": "Transit Hub",
+            "landmark": "Civic Metro Station Exit B"
+          },
+          "aiAnalysis": {
+            "detectedIssue": "Damaged Sidewalk",
+            "confidence": 95,
+            "observations": "Heaved concrete slab displacement (>7cm vertical offset) forming severe trip ledge across busy commuter path.",
+            "estimatedDamageLevel": "Severe",
+            "hazardClassification": "Severe ADA non-compliance and pedestrian fall hazard",
+            "isRealAiCall": true,
+            "modelUsed": "gemini-3.8-flash"
+          },
+          "severity": {
+            "score": 80,
+            "level": "Critical",
+            "contributingFactors": [
+              {
+                "factor": "Infrastructure Baseline",
+                "impact": 52,
+                "description": "Sidewalk displacement trip hazard"
+              },
+              {
+                "factor": "Visual Damage Extent",
+                "impact": 18,
+                "description": "Severe 7cm vertical slab heave"
+              },
+              {
+                "factor": "Zone Vulnerability",
+                "impact": 10,
+                "description": "Transit Hub high pedestrian throughput"
+              }
+            ]
+          },
+          "linkedIncidentId": "INC-2026-104",
+          "status": "Verified",
+          "isDemo": true
+        },
+        {
+          "id": "REP-2026-212",
+          "timestamp": "2026-10-03T08:10:00Z",
+          "imageUrl": "https://images.unsplash.com/photo-1584463699042-45a8d9a4f4d2?auto=format&fit=crop&w=800&q=80",
+          "description": "Broken cracked pavement right in front of metro turnstiles entrance. Wheelchairs cannot pass without getting stuck.",
+          "location": {
+            "lat": 37.773,
+            "lng": -122.42479999999999,
+            "address": "104 Metro Plaza",
+            "zone": "Transit Hub",
+            "landmark": "Metro Plaza Main Concourse"
+          },
+          "aiAnalysis": {
+            "detectedIssue": "Damaged Sidewalk",
+            "confidence": 96,
+            "observations": "Fractured sidewalk slabs blocking accessibility access route.",
+            "estimatedDamageLevel": "Severe",
+            "hazardClassification": "Wheelchair barrier and pedestrian obstruction",
+            "isRealAiCall": true,
+            "modelUsed": "gemini-3.8-flash"
+          },
+          "severity": {
+            "score": 80,
+            "level": "Critical",
+            "contributingFactors": [
+              {
+                "factor": "Infrastructure Baseline",
+                "impact": 52,
+                "description": "Sidewalk hazard"
+              },
+              {
+                "factor": "Visual Damage Extent",
+                "impact": 18,
+                "description": "Severe slab fracture"
+              },
+              {
+                "factor": "Zone Vulnerability",
+                "impact": 10,
+                "description": "Transit Hub"
+              }
+            ]
+          },
+          "linkedIncidentId": "INC-2026-104",
+          "isDuplicate": true,
+          "duplicateProbability": 93,
+          "matchingFactors": [
+            "Geospatial proximity: 14m",
+            "Issue match: Damaged Sidewalk",
+            "Keyword: Metro Plaza"
+          ],
+          "status": "Verified",
+          "isDemo": true
+        },
+        {
+          "id": "REP-2026-213",
+          "timestamp": "2026-10-04T17:20:00Z",
+          "imageUrl": "https://images.unsplash.com/photo-1584463699042-45a8d9a4f4d2?auto=format&fit=crop&w=800&q=80",
+          "description": "Elderly lady tripped on the uneven concrete at Metro exit. Dangerous during evening commute rush.",
+          "location": {
+            "lat": 37.7732,
+            "lng": -122.425,
+            "address": "96 Metro Plaza",
+            "zone": "Transit Hub",
+            "landmark": "Civic Metro Bus Bay"
+          },
+          "aiAnalysis": {
+            "detectedIssue": "Damaged Sidewalk",
+            "confidence": 94,
+            "observations": "Raised concrete edge creating recurrent pedestrian stumble incident.",
+            "estimatedDamageLevel": "Severe",
+            "hazardClassification": "Commuter pedestrian safety hazard",
+            "isRealAiCall": true,
+            "modelUsed": "gemini-3.8-flash"
+          },
+          "severity": {
+            "score": 80,
+            "level": "Critical",
+            "contributingFactors": [
+              {
+                "factor": "Infrastructure Baseline",
+                "impact": 52,
+                "description": "Sidewalk hazard"
+              },
+              {
+                "factor": "Visual Damage Extent",
+                "impact": 18,
+                "description": "Severe displacement"
+              },
+              {
+                "factor": "Zone Vulnerability",
+                "impact": 10,
+                "description": "Transit Hub"
+              }
+            ]
+          },
+          "linkedIncidentId": "INC-2026-104",
+          "isDuplicate": true,
+          "duplicateProbability": 91,
+          "matchingFactors": [
+            "Geospatial proximity: 23m",
+            "Issue match: Damaged Sidewalk",
+            "Corroborating trip report"
+          ],
+          "status": "Verified",
+          "isDemo": true
+        }
+      ],
+      "status": "Verified",
+      "createdAt": "2026-10-02T16:45:00Z",
+      "updatedAt": "2026-10-04T18:00:00Z",
+      "recurrenceCount": 1,
+      "aiExplanation": {
+        "summary": "Priority is Critical (84/100) due to severe 7cm concrete slab displacement outside a major Transit Hub, creating serious pedestrian trip risk and ADA accessibility violations verified by 3 commuter reports.",
+        "recommendedAction": "Install high-visibility ramp warning mat immediately; schedule concrete saw cutting and leveling crew within 24 hours.",
+        "generatedAt": "2026-10-04T18:00:00Z",
+        "modelUsed": "gemini-3.8-flash"
+      },
+      "timeline": [
+        {
+          "id": "TL-104-1",
+          "timestamp": "2026-10-02T16:45:00Z",
+          "status": "Pending",
+          "actor": "Citizen Portal",
+          "notes": "Report submitted by commuter."
+        },
+        {
+          "id": "TL-104-2",
+          "timestamp": "2026-10-03T09:00:00Z",
+          "status": "Pending",
+          "actor": "Consolidation Engine",
+          "notes": "Consolidated report REP-212."
+        },
+        {
+          "id": "TL-104-3",
+          "timestamp": "2026-10-04T18:30:00Z",
+          "status": "Verified",
+          "actor": "Transit Safety Inspector Diaz",
+          "notes": "Site inspection confirmed 7cm ledge. Prioritized as Critical."
+        }
+      ],
+      "assignedCrew": "Pedestrian Infrastructure Concrete Team #1",
+      "isDemo": true
+    },
+    {
+      "id": "INC-2026-105",
+      "issueType": "Garbage Accumulation",
+      "title": "Bulk Waste Dump & Alleyway Obstruction behind 8th St",
+      "location": {
+        "lat": 37.777100000000004,
+        "lng": -122.41319999999999,
+        "address": "Alley behind 320 8th Street",
+        "zone": "Alleyway / Minor Street",
+        "landmark": "8th St Commercial Alley"
+      },
+      "severityScore": 40,
+      "severityLevel": "Medium",
+      "priorityScore": 52,
+      "priorityLevel": "Medium",
+      "priorityFactors": [
+        {
+          "factor": "Visual & Structural Severity",
+          "weight": 0.4,
+          "score": 40,
+          "contribution": 16,
+          "explanation": "Moderate bulk debris pile occupying municipal right-of-way."
+        },
+        {
+          "factor": "Citizen Corroboration & Report Count",
+          "weight": 0.2,
+          "score": 65,
+          "contribution": 13,
+          "explanation": "2 citizen complaints logged."
+        },
+        {
+          "factor": "Critical Location & Transit Density",
+          "weight": 0.15,
+          "score": 35,
+          "contribution": 5,
+          "explanation": "Service alleyway with low vehicular throughput."
+        },
+        {
+          "factor": "Chronic Recurrence History",
+          "weight": 0.1,
+          "score": 55,
+          "contribution": 6,
+          "explanation": "1 previous dumping incident recorded at this dead-end."
+        },
+        {
+          "factor": "Public Safety & Transit Impact",
+          "weight": 0.15,
+          "score": 58,
+          "contribution": 9,
+          "explanation": "Pest vector proliferation and fire load hazard."
+        }
+      ],
+      "reportCount": 2,
+      "sourceReportIds": [
+        "REP-2026-214",
+        "REP-2026-215"
+      ],
+      "sourceReports": [
+        {
+          "id": "REP-2026-214",
+          "timestamp": "2026-10-04T15:00:00Z",
+          "imageUrl": "https://images.unsplash.com/photo-1530587191325-3db32d826c18?auto=format&fit=crop&w=800&q=80",
+          "description": "Bulk furniture, broken pallets, and overflowing bags dumped in alleyway behind 8th Street shops.",
+          "location": {
+            "lat": 37.777100000000004,
+            "lng": -122.41319999999999,
+            "address": "Alley behind 320 8th Street",
+            "zone": "Alleyway / Minor Street",
+            "landmark": "8th St Commercial Alley"
+          },
+          "aiAnalysis": {
+            "detectedIssue": "Garbage Accumulation",
+            "confidence": 96,
+            "observations": "Substantial solid waste accumulation blocking secondary service alleyway with organic decomposition.",
+            "estimatedDamageLevel": "Moderate",
+            "hazardClassification": "Pest vector proliferation and fire load hazard",
+            "isRealAiCall": true,
+            "modelUsed": "gemini-3.8-flash"
+          },
+          "severity": {
+            "score": 40,
+            "level": "Medium",
+            "contributingFactors": [
+              {
+                "factor": "Infrastructure Baseline",
+                "impact": 42,
+                "description": "Solid waste accumulation baseline"
+              },
+              {
+                "factor": "Visual Damage Extent",
+                "impact": 0,
+                "description": "Moderate bulk debris heap"
+              },
+              {
+                "factor": "Zone Vulnerability",
+                "impact": -4,
+                "description": "Alleyway with low direct traffic"
+              }
+            ]
+          },
+          "linkedIncidentId": "INC-2026-105",
+          "status": "Pending",
+          "isDemo": true
+        },
+        {
+          "id": "REP-2026-215",
+          "timestamp": "2026-10-05T09:15:00Z",
+          "imageUrl": "https://images.unsplash.com/photo-1530587191325-3db32d826c18?auto=format&fit=crop&w=800&q=80",
+          "description": "Trash pile is growing on 8th st alley. Rats spotted near the discarded mattresses.",
+          "location": {
+            "lat": 37.7772,
+            "lng": -122.41329999999999,
+            "address": "326 8th Street Alley",
+            "zone": "Alleyway / Minor Street",
+            "landmark": "8th St Alleyway Service Gate"
+          },
+          "aiAnalysis": {
+            "detectedIssue": "Garbage Accumulation",
+            "confidence": 93,
+            "observations": "Discarded bulk mattress and domestic waste sacks spilling into lane.",
+            "estimatedDamageLevel": "Moderate",
+            "hazardClassification": "Sanitation hazard and vermin attraction",
+            "isRealAiCall": true,
+            "modelUsed": "gemini-3.8-flash"
+          },
+          "severity": {
+            "score": 40,
+            "level": "Medium",
+            "contributingFactors": [
+              {
+                "factor": "Infrastructure Baseline",
+                "impact": 42,
+                "description": "Garbage baseline"
+              },
+              {
+                "factor": "Zone Vulnerability",
+                "impact": -4,
+                "description": "Alleyway"
+              }
+            ]
+          },
+          "linkedIncidentId": "INC-2026-105",
+          "isDuplicate": true,
+          "duplicateProbability": 95,
+          "matchingFactors": [
+            "Geospatial proximity: 16m",
+            "Issue match: Garbage Accumulation",
+            "Keyword: 8th Street alley"
+          ],
+          "status": "Pending",
+          "isDemo": true
+        }
+      ],
+      "status": "Pending",
+      "createdAt": "2026-10-04T15:00:00Z",
+      "updatedAt": "2026-10-05T09:20:00Z",
+      "recurrenceCount": 1,
+      "aiExplanation": {
+        "summary": "Priority is Medium (52/100) because the bulk dumping obstruction is confined to a secondary alleyway without high-speed transit risk, though 2 citizen reports note vermin attraction.",
+        "recommendedAction": "Schedule municipal sanitation flatbed compactor route for next morning bulk debris sweep.",
+        "generatedAt": "2026-10-05T09:20:00Z",
+        "modelUsed": "gemini-3.8-flash"
+      },
+      "timeline": [
+        {
+          "id": "TL-105-1",
+          "timestamp": "2026-10-04T15:00:00Z",
+          "status": "Pending",
+          "actor": "Citizen Portal",
+          "notes": "Initial dumping report submitted."
+        },
+        {
+          "id": "TL-105-2",
+          "timestamp": "2026-10-05T09:15:00Z",
+          "status": "Pending",
+          "actor": "Consolidation Engine",
+          "notes": "Consolidated report REP-215."
+        }
+      ],
+      "isDemo": true
+    },
+    {
+      "id": "INC-2026-106",
+      "issueType": "Damaged Signage",
+      "title": "Downed Stop Sign at Arterial Multilane Intersection",
+      "location": {
+        "lat": 37.7764,
+        "lng": -122.4266,
+        "address": "Intersection of Maple Ave & Highfield Blvd",
+        "zone": "Arterial Road",
+        "landmark": "Maple & Highfield Intersection"
+      },
+      "severityScore": 85,
+      "severityLevel": "Critical",
+      "priorityScore": 86,
+      "priorityLevel": "Critical",
+      "priorityFactors": [
+        {
+          "factor": "Visual & Structural Severity",
+          "weight": 0.4,
+          "score": 85,
+          "contribution": 34,
+          "explanation": "Total knockdown of regulatory STOP sign leaving intersection unmanaged."
+        },
+        {
+          "factor": "Citizen Corroboration & Report Count",
+          "weight": 0.2,
+          "score": 65,
+          "contribution": 13,
+          "explanation": "2 urgent citizen reports citing near-collisions."
+        },
+        {
+          "factor": "Critical Location & Transit Density",
+          "weight": 0.15,
+          "score": 90,
+          "contribution": 14,
+          "explanation": "High-speed arterial crossway with 18,000 daily vehicles."
+        },
+        {
+          "factor": "Chronic Recurrence History",
+          "weight": 0.1,
+          "score": 20,
+          "contribution": 2,
+          "explanation": "First collision incident logged at this post."
+        },
+        {
+          "factor": "Public Safety & Transit Impact",
+          "weight": 0.15,
+          "score": 82,
+          "contribution": 12,
+          "explanation": "Extreme danger of severe T-bone collision at 45 mph."
+        }
+      ],
+      "reportCount": 2,
+      "sourceReportIds": [
+        "REP-2026-216",
+        "REP-2026-217"
+      ],
+      "sourceReports": [
+        {
+          "id": "REP-2026-216",
+          "timestamp": "2026-10-05T06:30:00Z",
+          "imageUrl": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=800&q=80",
+          "description": "Stop sign knocked down completely at Maple & Highfield intersection. Cars speeding through without stopping!",
+          "location": {
+            "lat": 37.7764,
+            "lng": -122.4266,
+            "address": "Intersection of Maple Ave & Highfield Blvd",
+            "zone": "Arterial Road",
+            "landmark": "Maple & Highfield Intersection"
+          },
+          "aiAnalysis": {
+            "detectedIssue": "Damaged Signage",
+            "confidence": 97,
+            "observations": "Octagonal STOP sign post severed at base plate and lying prone on curb, leaving 4-way intersection unregulated.",
+            "estimatedDamageLevel": "Severe",
+            "hazardClassification": "Critical collision risk and right-of-way failure",
+            "isRealAiCall": true,
+            "modelUsed": "gemini-3.8-flash"
+          },
+          "severity": {
+            "score": 85,
+            "level": "Critical",
+            "contributingFactors": [
+              {
+                "factor": "Infrastructure Baseline",
+                "impact": 55,
+                "description": "Traffic regulatory signage failure"
+              },
+              {
+                "factor": "Visual Damage Extent",
+                "impact": 18,
+                "description": "Complete structural knockdown"
+              },
+              {
+                "factor": "Zone Vulnerability",
+                "impact": 12,
+                "description": "Arterial multilane corridor"
+              }
+            ]
+          },
+          "linkedIncidentId": "INC-2026-106",
+          "status": "Assigned",
+          "isDemo": true
+        },
+        {
+          "id": "REP-2026-217",
+          "timestamp": "2026-10-05T07:10:00Z",
+          "imageUrl": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=800&q=80",
+          "description": "Traffic sign flattened on Maple Blvd. Almost saw a T-bone crash 5 minutes ago.",
+          "location": {
+            "lat": 37.776500000000006,
+            "lng": -122.42649999999999,
+            "address": "Maple Blvd corner Highfield",
+            "zone": "Arterial Road",
+            "landmark": "Highfield Corner"
+          },
+          "aiAnalysis": {
+            "detectedIssue": "Damaged Signage",
+            "confidence": 95,
+            "observations": "Downed traffic control post creating intersection confusion.",
+            "estimatedDamageLevel": "Severe",
+            "hazardClassification": "Imminent broadside crash hazard",
+            "isRealAiCall": true,
+            "modelUsed": "gemini-3.8-flash"
+          },
+          "severity": {
+            "score": 85,
+            "level": "Critical",
+            "contributingFactors": [
+              {
+                "factor": "Infrastructure Baseline",
+                "impact": 55,
+                "description": "Traffic signage"
+              },
+              {
+                "factor": "Visual Damage Extent",
+                "impact": 18,
+                "description": "Knockdown"
+              },
+              {
+                "factor": "Zone Vulnerability",
+                "impact": 12,
+                "description": "Arterial Road"
+              }
+            ]
+          },
+          "linkedIncidentId": "INC-2026-106",
+          "isDuplicate": true,
+          "duplicateProbability": 96,
+          "matchingFactors": [
+            "Geospatial proximity: 14m",
+            "Issue match: Damaged Signage",
+            "Keyword: Maple, Highfield"
+          ],
+          "status": "Assigned",
+          "isDemo": true
+        }
+      ],
+      "status": "Assigned",
+      "createdAt": "2026-10-05T06:30:00Z",
+      "updatedAt": "2026-10-05T07:25:00Z",
+      "recurrenceCount": 0,
+      "aiExplanation": {
+        "summary": "Priority is Critical (86/100) because a primary regulatory STOP sign has been completely flattened on a major arterial roadway, creating an immediate life-safety intersection collision hazard corroborated by 2 citizen reports.",
+        "recommendedAction": "Dispatch emergency traffic technician to erect temporary roll-up STOP sign and drill new breakaway anchor base.",
+        "generatedAt": "2026-10-05T07:25:00Z",
+        "modelUsed": "gemini-3.8-flash"
+      },
+      "timeline": [
+        {
+          "id": "TL-106-1",
+          "timestamp": "2026-10-05T06:30:00Z",
+          "status": "Pending",
+          "actor": "Citizen Portal",
+          "notes": "Report submitted."
+        },
+        {
+          "id": "TL-106-2",
+          "timestamp": "2026-10-05T07:15:00Z",
+          "status": "Assigned",
+          "actor": "Traffic Ops Duty Officer Vance",
+          "notes": "Auto-triaged to Emergency Signage Dispatch Unit."
+        }
+      ],
+      "assignedCrew": "Traffic Control Emergency Response Crew #3",
+      "isDemo": true
+    },
+    {
+      "id": "INC-2026-107",
+      "issueType": "Road Damage",
+      "title": "Transverse Asphalt Fissure on Grand Expressway",
+      "location": {
+        "lat": 37.7687,
+        "lng": -122.4212,
+        "address": "Grand Expressway eastbound mile 4.2",
+        "zone": "Arterial Road",
+        "landmark": "Overpass 4"
+      },
+      "severityScore": 72,
+      "severityLevel": "High",
+      "priorityScore": 75,
+      "priorityLevel": "High",
+      "priorityFactors": [
+        {
+          "factor": "Visual & Structural Severity",
+          "weight": 0.4,
+          "score": 72,
+          "contribution": 29,
+          "explanation": "4.5m transverse crack across active highway lane."
+        },
+        {
+          "factor": "Citizen Corroboration & Report Count",
+          "weight": 0.2,
+          "score": 65,
+          "contribution": 13,
+          "explanation": "2 commuter submissions."
+        },
+        {
+          "factor": "Critical Location & Transit Density",
+          "weight": 0.15,
+          "score": 90,
+          "contribution": 14,
+          "explanation": "Arterial expressway carrying 45,000 vehicles/day."
+        },
+        {
+          "factor": "Chronic Recurrence History",
+          "weight": 0.1,
+          "score": 20,
+          "contribution": 2,
+          "explanation": "No prior recurrence logged at this segment."
+        },
+        {
+          "factor": "Public Safety & Transit Impact",
+          "weight": 0.15,
+          "score": 78,
+          "contribution": 12,
+          "explanation": "Risk of rapid winter pothole formation from freeze-thaw."
+        }
+      ],
+      "reportCount": 2,
+      "sourceReportIds": [
+        "REP-2026-218",
+        "REP-2026-219"
+      ],
+      "sourceReports": [
+        {
+          "id": "REP-2026-218",
+          "timestamp": "2026-10-03T14:00:00Z",
+          "imageUrl": "https://images.unsplash.com/photo-1515162816999-a0c47dc192f7?auto=format&fit=crop&w=800&q=80",
+          "description": "Long asphalt fracture cracking across lane 2 on Grand Expressway.",
+          "location": {
+            "lat": 37.7687,
+            "lng": -122.4212,
+            "address": "Grand Expressway eastbound mile 4.2",
+            "zone": "Arterial Road",
+            "landmark": "Overpass 4"
+          },
+          "aiAnalysis": {
+            "detectedIssue": "Road Damage",
+            "confidence": 89,
+            "observations": "Transverse thermal crack measuring 4.5m with minor edge ravelling.",
+            "estimatedDamageLevel": "Moderate",
+            "hazardClassification": "High-speed vehicular vibration and moisture intrusion",
+            "isRealAiCall": true,
+            "modelUsed": "gemini-3.8-flash"
+          },
+          "severity": {
+            "score": 72,
+            "level": "High",
+            "contributingFactors": [
+              {
+                "factor": "Infrastructure Baseline",
+                "impact": 60,
+                "description": "Road structural damage"
+              },
+              {
+                "factor": "Zone Vulnerability",
+                "impact": 12,
+                "description": "Arterial Road"
+              }
+            ]
+          },
+          "linkedIncidentId": "INC-2026-107",
+          "status": "Verified",
+          "isDemo": true
+        },
+        {
+          "id": "REP-2026-219",
+          "timestamp": "2026-10-04T10:30:00Z",
+          "imageUrl": "https://images.unsplash.com/photo-1515162816999-a0c47dc192f7?auto=format&fit=crop&w=800&q=80",
+          "description": "Crack on Grand Expressway is opening wider after heavy rain.",
+          "location": {
+            "lat": 37.7688,
+            "lng": -122.4211,
+            "address": "Grand Expressway mile 4.2",
+            "zone": "Arterial Road",
+            "landmark": "Overpass 4"
+          },
+          "aiAnalysis": {
+            "detectedIssue": "Road Damage",
+            "confidence": 91,
+            "observations": "Expanding asphalt crack opening.",
+            "estimatedDamageLevel": "Moderate",
+            "hazardClassification": "Pavement degradation",
+            "isRealAiCall": true,
+            "modelUsed": "gemini-3.8-flash"
+          },
+          "severity": {
+            "score": 72,
+            "level": "High",
+            "contributingFactors": [
+              {
+                "factor": "Infrastructure Baseline",
+                "impact": 60,
+                "description": "Road damage"
+              },
+              {
+                "factor": "Zone Vulnerability",
+                "impact": 12,
+                "description": "Arterial Road"
+              }
+            ]
+          },
+          "linkedIncidentId": "INC-2026-107",
+          "isDuplicate": true,
+          "duplicateProbability": 92,
+          "matchingFactors": [
+            "Geospatial proximity: 20m",
+            "Issue match: Road Damage"
+          ],
+          "status": "Verified",
+          "isDemo": true
+        }
+      ],
+      "status": "Verified",
+      "createdAt": "2026-10-03T14:00:00Z",
+      "updatedAt": "2026-10-04T11:00:00Z",
+      "recurrenceCount": 0,
+      "aiExplanation": {
+        "summary": "Priority is High (75/100) due to significant thermal cracking spanning across a high-speed expressway lane, confirmed by 2 reports, threatening progressive pavement breakdown.",
+        "recommendedAction": "Schedule night-time crack sealing crew with hot-pour rubberized sealant between 11 PM and 5 AM.",
+        "generatedAt": "2026-10-04T11:00:00Z",
+        "modelUsed": "gemini-3.8-flash"
+      },
+      "timeline": [
+        {
+          "id": "TL-107-1",
+          "timestamp": "2026-10-03T14:00:00Z",
+          "status": "Pending",
+          "actor": "Citizen Portal",
+          "notes": "First report logged."
+        },
+        {
+          "id": "TL-107-2",
+          "timestamp": "2026-10-04T11:00:00Z",
+          "status": "Verified",
+          "actor": "Caltrans/City Highway Inspector",
+          "notes": "Confirmed crack dimensions."
+        }
+      ],
+      "isDemo": true
+    },
+    {
+      "id": "INC-2026-108",
+      "issueType": "Overflowing Drain",
+      "title": "Debris-Clogged Catch Basin on Riverview Road",
+      "location": {
+        "lat": 37.779700000000005,
+        "lng": -122.4259,
+        "address": "412 Riverview Road",
+        "zone": "Residential Area",
+        "landmark": "Riverview Cul-de-sac"
+      },
+      "severityScore": 57,
+      "severityLevel": "Medium",
+      "priorityScore": 50,
+      "priorityLevel": "Medium",
+      "priorityFactors": [
+        {
+          "factor": "Visual & Structural Severity",
+          "weight": 0.4,
+          "score": 57,
+          "contribution": 23,
+          "explanation": "Foliage blockage causing 4-inch curb water pooling."
+        },
+        {
+          "factor": "Citizen Corroboration & Report Count",
+          "weight": 0.2,
+          "score": 40,
+          "contribution": 8,
+          "explanation": "1 single citizen report."
+        },
+        {
+          "factor": "Critical Location & Transit Density",
+          "weight": 0.15,
+          "score": 55,
+          "contribution": 8,
+          "explanation": "Residential cul-de-sac with localized neighborhood traffic."
+        },
+        {
+          "factor": "Chronic Recurrence History",
+          "weight": 0.1,
+          "score": 20,
+          "contribution": 2,
+          "explanation": "No prior complaints logged."
+        },
+        {
+          "factor": "Public Safety & Transit Impact",
+          "weight": 0.15,
+          "score": 55,
+          "contribution": 8,
+          "explanation": "Gutter ponding without structural sewer pipe damage."
+        }
+      ],
+      "reportCount": 1,
+      "sourceReportIds": [
+        "REP-2026-220"
+      ],
+      "sourceReports": [
+        {
+          "id": "REP-2026-220",
+          "timestamp": "2026-10-05T08:10:00Z",
+          "imageUrl": "https://images.unsplash.com/photo-1541888946425-d0fbb1861593?auto=format&fit=crop&w=800&q=80",
+          "description": "Catch basin completely clogged with fallen leaves and silt. Street gutter standing water is 4 inches deep.",
+          "location": {
+            "lat": 37.779700000000005,
+            "lng": -122.4259,
+            "address": "412 Riverview Road",
+            "zone": "Residential Area",
+            "landmark": "Riverview Cul-de-sac"
+          },
+          "aiAnalysis": {
+            "detectedIssue": "Overflowing Drain",
+            "confidence": 88,
+            "observations": "Storm grate obstructed by foliage debris resulting in localized curb pooling.",
+            "estimatedDamageLevel": "Minor",
+            "hazardClassification": "Localized gutter waterlogging",
+            "isRealAiCall": true,
+            "modelUsed": "gemini-3.8-flash"
+          },
+          "severity": {
+            "score": 57,
+            "level": "Medium",
+            "contributingFactors": [
+              {
+                "factor": "Infrastructure Baseline",
+                "impact": 70,
+                "description": "Drainage baseline"
+              },
+              {
+                "factor": "Visual Damage Extent",
+                "impact": -15,
+                "description": "Minor surface foliage blockage"
+              },
+              {
+                "factor": "Zone Vulnerability",
+                "impact": 2,
+                "description": "Residential street"
+              }
+            ]
+          },
+          "linkedIncidentId": "INC-2026-108",
+          "status": "Pending",
+          "isDemo": true
+        }
+      ],
+      "status": "Pending",
+      "createdAt": "2026-10-05T08:10:00Z",
+      "updatedAt": "2026-10-05T08:10:00Z",
+      "recurrenceCount": 0,
+      "aiExplanation": {
+        "summary": "Priority is Medium (50/100) because the verified drainage issue is limited to surface foliage blockage on a low-traffic residential street with a single citizen report.",
+        "recommendedAction": "Route stormwater maintenance vacuum truck during weekly quadrant sweep to clear basin grate.",
+        "generatedAt": "2026-10-05T08:10:00Z",
+        "modelUsed": "gemini-3.8-flash"
+      },
+      "timeline": [
+        {
+          "id": "TL-108-1",
+          "timestamp": "2026-10-05T08:10:00Z",
+          "status": "Pending",
+          "actor": "Citizen Portal",
+          "notes": "Report submitted."
+        }
+      ],
+      "isDemo": true
+    },
+    {
+      "id": "INC-2026-109",
+      "issueType": "Broken Streetlight",
+      "title": "Flickering Luminaire on Oak Lane",
+      "location": {
+        "lat": 37.778800000000004,
+        "lng": -122.41749999999999,
+        "address": "150 Oak Lane",
+        "zone": "Residential Area",
+        "landmark": "Oak Lane Community Garden"
+      },
+      "severityScore": 32,
+      "severityLevel": "Low",
+      "priorityScore": 36,
+      "priorityLevel": "Low",
+      "priorityFactors": [
+        {
+          "factor": "Visual & Structural Severity",
+          "weight": 0.4,
+          "score": 32,
+          "contribution": 13,
+          "explanation": "Minor photo-sensor flicker."
+        },
+        {
+          "factor": "Citizen Corroboration & Report Count",
+          "weight": 0.2,
+          "score": 40,
+          "contribution": 8,
+          "explanation": "1 citizen submission."
+        },
+        {
+          "factor": "Critical Location & Transit Density",
+          "weight": 0.15,
+          "score": 55,
+          "contribution": 8,
+          "explanation": "Quiet residential street."
+        },
+        {
+          "factor": "Chronic Recurrence History",
+          "weight": 0.1,
+          "score": 20,
+          "contribution": 2,
+          "explanation": "No recurrence history."
+        },
+        {
+          "factor": "Public Safety & Transit Impact",
+          "weight": 0.15,
+          "score": 35,
+          "contribution": 5,
+          "explanation": "Low public safety impact."
+        }
+      ],
+      "reportCount": 1,
+      "sourceReportIds": [
+        "REP-2026-221"
+      ],
+      "sourceReports": [
+        {
+          "id": "REP-2026-221",
+          "timestamp": "2026-10-01T21:00:00Z",
+          "imageUrl": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=800&q=80",
+          "description": "Streetlight pole 44 on Oak Lane is flickering constantly like a strobe light.",
+          "location": {
+            "lat": 37.778800000000004,
+            "lng": -122.41749999999999,
+            "address": "150 Oak Lane",
+            "zone": "Residential Area",
+            "landmark": "Oak Lane Community Garden"
+          },
+          "aiAnalysis": {
+            "detectedIssue": "Broken Streetlight",
+            "confidence": 90,
+            "observations": "Intermittent luminaire ballast flicker.",
+            "estimatedDamageLevel": "Minor",
+            "hazardClassification": "Nuisance flicker and partial lighting loss",
+            "isRealAiCall": true,
+            "modelUsed": "gemini-3.8-flash"
+          },
+          "severity": {
+            "score": 32,
+            "level": "Low",
+            "contributingFactors": [
+              {
+                "factor": "Infrastructure Baseline",
+                "impact": 45,
+                "description": "Streetlight baseline"
+              },
+              {
+                "factor": "Visual Damage Extent",
+                "impact": -15,
+                "description": "Minor ballast flicker"
+              },
+              {
+                "factor": "Zone Vulnerability",
+                "impact": 2,
+                "description": "Residential street"
+              }
+            ]
+          },
+          "linkedIncidentId": "INC-2026-109",
+          "status": "Resolved",
+          "isDemo": true
+        }
+      ],
+      "status": "Resolved",
+      "createdAt": "2026-10-01T21:00:00Z",
+      "updatedAt": "2026-10-03T11:00:00Z",
+      "recurrenceCount": 0,
+      "aiExplanation": {
+        "summary": "Priority was Low (36/100) due to minor ballast photo-sensor degradation without complete light failure.",
+        "recommendedAction": "Photo-eye sensor replaced with standard LED driver module. Luminaire verified operational.",
+        "generatedAt": "2026-10-03T11:00:00Z",
+        "modelUsed": "gemini-3.8-flash"
+      },
+      "timeline": [
+        {
+          "id": "TL-109-1",
+          "timestamp": "2026-10-01T21:00:00Z",
+          "status": "Pending",
+          "actor": "Citizen Portal",
+          "notes": "Report submitted."
+        },
+        {
+          "id": "TL-109-2",
+          "timestamp": "2026-10-02T09:00:00Z",
+          "status": "Assigned",
+          "actor": "District Dispatch",
+          "notes": "Assigned to utility crew."
+        },
+        {
+          "id": "TL-109-3",
+          "timestamp": "2026-10-03T11:00:00Z",
+          "status": "Resolved",
+          "actor": "Crew Tech Evans",
+          "notes": "Replaced faulty photo-sensor cell. Work complete."
+        }
+      ],
+      "assignedCrew": "Municipal Electric Team #4",
+      "resolutionNotes": "Replaced faulty photocell relay switch. Inspected mast wiring.",
+      "isDemo": true
+    },
+    {
+      "id": "INC-2026-110",
+      "issueType": "Road Damage",
+      "title": "Sunken Utility Trench Collapse Across Cedar Lane",
+      "location": {
+        "lat": 37.7718,
+        "lng": -122.4233,
+        "address": "78 Cedar Lane",
+        "zone": "Residential Area",
+        "landmark": "Cedar Lane Library Branch"
+      },
+      "severityScore": 75,
+      "severityLevel": "High",
+      "priorityScore": 68,
+      "priorityLevel": "High",
+      "priorityFactors": [
+        {
+          "factor": "Visual & Structural Severity",
+          "weight": 0.4,
+          "score": 75,
+          "contribution": 30,
+          "explanation": "6-inch trench depression cutting entirely across travel lane."
+        },
+        {
+          "factor": "Citizen Corroboration & Report Count",
+          "weight": 0.2,
+          "score": 40,
+          "contribution": 8,
+          "explanation": "1 detailed citizen report."
+        },
+        {
+          "factor": "Critical Location & Transit Density",
+          "weight": 0.15,
+          "score": 55,
+          "contribution": 8,
+          "explanation": "Residential corridor near local library."
+        },
+        {
+          "factor": "Chronic Recurrence History",
+          "weight": 0.1,
+          "score": 55,
+          "contribution": 6,
+          "explanation": "1 prior trench settling notice served to utility contractor."
+        },
+        {
+          "factor": "Public Safety & Transit Impact",
+          "weight": 0.15,
+          "score": 78,
+          "contribution": 12,
+          "explanation": "Severe vehicle suspension shock and motorcycle hazard."
+        }
+      ],
+      "reportCount": 1,
+      "sourceReportIds": [
+        "REP-2026-222"
+      ],
+      "sourceReports": [
+        {
+          "id": "REP-2026-222",
+          "timestamp": "2026-10-04T07:45:00Z",
+          "imageUrl": "https://images.unsplash.com/photo-1515162816999-a0c47dc192f7?auto=format&fit=crop&w=800&q=80",
+          "description": "Gas company cut a trench across Cedar Lane and filled it with loose gravel. It collapsed 6 inches down.",
+          "location": {
+            "lat": 37.7718,
+            "lng": -122.4233,
+            "address": "78 Cedar Lane",
+            "zone": "Residential Area",
+            "landmark": "Cedar Lane Library Branch"
+          },
+          "aiAnalysis": {
+            "detectedIssue": "Road Damage",
+            "confidence": 93,
+            "observations": "Subsided trench depression across roadway width with uncompacted backfill collapse.",
+            "estimatedDamageLevel": "Severe",
+            "hazardClassification": "Severe axle damage and motorcycle flip hazard",
+            "isRealAiCall": true,
+            "modelUsed": "gemini-3.8-flash"
+          },
+          "severity": {
+            "score": 75,
+            "level": "High",
+            "contributingFactors": [
+              {
+                "factor": "Infrastructure Baseline",
+                "impact": 60,
+                "description": "Road structural damage"
+              },
+              {
+                "factor": "Visual Damage Extent",
+                "impact": 18,
+                "description": "Severe trench subsidence"
+              },
+              {
+                "factor": "Zone Vulnerability",
+                "impact": 2,
+                "description": "Residential street"
+              }
+            ]
+          },
+          "linkedIncidentId": "INC-2026-110",
+          "status": "In Progress",
+          "isDemo": true
+        }
+      ],
+      "status": "In Progress",
+      "createdAt": "2026-10-04T07:45:00Z",
+      "updatedAt": "2026-10-05T08:00:00Z",
+      "recurrenceCount": 1,
+      "aiExplanation": {
+        "summary": "Priority is High (68/100) because an uncompacted utility trench has settled 6 inches across the roadway, presenting severe two-wheeler hazards.",
+        "recommendedAction": "Issue immediate emergency compaction and permanent hot-mix repaving order to subcontractor.",
+        "generatedAt": "2026-10-05T08:00:00Z",
+        "modelUsed": "gemini-3.8-flash"
+      },
+      "timeline": [
+        {
+          "id": "TL-110-1",
+          "timestamp": "2026-10-04T07:45:00Z",
+          "status": "Pending",
+          "actor": "Citizen Portal",
+          "notes": "Report submitted with photos."
+        },
+        {
+          "id": "TL-110-2",
+          "timestamp": "2026-10-04T12:00:00Z",
+          "status": "Verified",
+          "actor": "Right-of-Way Inspector Chen",
+          "notes": "Violation citation issued to utility contractor."
+        },
+        {
+          "id": "TL-110-3",
+          "timestamp": "2026-10-05T08:00:00Z",
+          "status": "In Progress",
+          "actor": "Contractor Paving Crew",
+          "notes": "Excavating and leveling base course."
+        }
+      ],
+      "assignedCrew": "City Right-of-Way Inspectorate / PG&E Paving Sub",
+      "isDemo": true
+    },
+    {
+      "id": "INC-2026-111",
+      "issueType": "Road Damage",
+      "title": "Faded Thermoplastic School Crosswalk Markings",
+      "location": {
+        "lat": 37.7777,
+        "lng": -122.4245,
+        "address": "500 Lincoln Way",
+        "zone": "School Zone",
+        "landmark": "Lincoln Middle School"
+      },
+      "severityScore": 55,
+      "severityLevel": "Medium",
+      "priorityScore": 61,
+      "priorityLevel": "High",
+      "priorityFactors": [
+        {
+          "factor": "Visual & Structural Severity",
+          "weight": 0.4,
+          "score": 55,
+          "contribution": 22,
+          "explanation": "Over 80% paint erosion across school zebra crossing."
+        },
+        {
+          "factor": "Citizen Corroboration & Report Count",
+          "weight": 0.2,
+          "score": 40,
+          "contribution": 8,
+          "explanation": "1 school parent report."
+        },
+        {
+          "factor": "Critical Location & Transit Density",
+          "weight": 0.15,
+          "score": 95,
+          "contribution": 14,
+          "explanation": "Active School Zone crossing corridor."
+        },
+        {
+          "factor": "Chronic Recurrence History",
+          "weight": 0.1,
+          "score": 20,
+          "contribution": 2,
+          "explanation": "Scheduled yearly restriping cycle."
+        },
+        {
+          "factor": "Public Safety & Transit Impact",
+          "weight": 0.15,
+          "score": 78,
+          "contribution": 12,
+          "explanation": "Driver awareness critical for middle school student safety."
+        }
+      ],
+      "reportCount": 1,
+      "sourceReportIds": [
+        "REP-2026-223"
+      ],
+      "sourceReports": [
+        {
+          "id": "REP-2026-223",
+          "timestamp": "2026-10-03T11:20:00Z",
+          "imageUrl": "https://images.unsplash.com/photo-1584463699042-45a8d9a4f4d2?auto=format&fit=crop&w=800&q=80",
+          "description": "Zebra stripes at Lincoln Middle School crossing are almost completely worn away by tire traffic.",
+          "location": {
+            "lat": 37.7777,
+            "lng": -122.4245,
+            "address": "500 Lincoln Way",
+            "zone": "School Zone",
+            "landmark": "Lincoln Middle School"
+          },
+          "aiAnalysis": {
+            "detectedIssue": "Road Damage",
+            "confidence": 88,
+            "observations": "Thermoplastic pedestrian crossing paint eroded >80% in vehicle travel path.",
+            "estimatedDamageLevel": "Moderate",
+            "hazardClassification": "Reduced pedestrian crosswalk visibility",
+            "isRealAiCall": true,
+            "modelUsed": "gemini-3.8-flash"
+          },
+          "severity": {
+            "score": 55,
+            "level": "Medium",
+            "contributingFactors": [
+              {
+                "factor": "Infrastructure Baseline",
+                "impact": 60,
+                "description": "Road marking degradation"
+              },
+              {
+                "factor": "Visual Damage Extent",
+                "impact": 0,
+                "description": "Moderate wear profile"
+              },
+              {
+                "factor": "Zone Vulnerability",
+                "impact": 14,
+                "description": "School Zone"
+              }
+            ]
+          },
+          "linkedIncidentId": "INC-2026-111",
+          "status": "Assigned",
+          "isDemo": true
+        }
+      ],
+      "status": "Assigned",
+      "createdAt": "2026-10-03T11:20:00Z",
+      "updatedAt": "2026-10-04T14:00:00Z",
+      "recurrenceCount": 0,
+      "aiExplanation": {
+        "summary": "Priority is High (61/100) elevated by the School Zone location requirement for high-contrast crosswalk visibility.",
+        "recommendedAction": "Schedule thermoplastic line-marking truck for high-durability retroreflective restriping.",
+        "generatedAt": "2026-10-04T14:00:00Z",
+        "modelUsed": "gemini-3.8-flash"
+      },
+      "timeline": [
+        {
+          "id": "TL-111-1",
+          "timestamp": "2026-10-03T11:20:00Z",
+          "status": "Pending",
+          "actor": "Citizen Portal",
+          "notes": "Report submitted."
+        },
+        {
+          "id": "TL-111-2",
+          "timestamp": "2026-10-04T14:00:00Z",
+          "status": "Assigned",
+          "actor": "Traffic Engineering Division",
+          "notes": "Work order #T-4889 issued to Line Striping Crew."
+        }
+      ],
+      "assignedCrew": "Traffic Markings Crew #1",
+      "isDemo": true
+    },
+    {
+      "id": "INC-2026-112",
+      "issueType": "Pothole",
+      "title": "Surface Pothole on 1st Avenue Commercial Strip",
+      "location": {
+        "lat": 37.7725,
+        "lng": -122.4139,
+        "address": "210 1st Avenue",
+        "zone": "Commercial Center",
+        "landmark": "Roast Coffee Co."
+      },
+      "severityScore": 42,
+      "severityLevel": "Medium",
+      "priorityScore": 35,
+      "priorityLevel": "Low",
+      "priorityFactors": [
+        {
+          "factor": "Visual & Structural Severity",
+          "weight": 0.4,
+          "score": 42,
+          "contribution": 17,
+          "explanation": "Minor shallow surface depression."
+        },
+        {
+          "factor": "Citizen Corroboration & Report Count",
+          "weight": 0.2,
+          "score": 65,
+          "contribution": 13,
+          "explanation": "2 reports consolidated."
+        },
+        {
+          "factor": "Critical Location & Transit Density",
+          "weight": 0.15,
+          "score": 72,
+          "contribution": 11,
+          "explanation": "Commercial parking approach."
+        },
+        {
+          "factor": "Chronic Recurrence History",
+          "weight": 0.1,
+          "score": 20,
+          "contribution": 2,
+          "explanation": "No prior complaints."
+        },
+        {
+          "factor": "Public Safety & Transit Impact",
+          "weight": 0.15,
+          "score": 45,
+          "contribution": 7,
+          "explanation": "Low-speed retail traffic."
+        }
+      ],
+      "reportCount": 2,
+      "sourceReportIds": [
+        "REP-2026-224",
+        "REP-2026-225"
+      ],
+      "sourceReports": [
+        {
+          "id": "REP-2026-224",
+          "timestamp": "2026-09-28T09:15:00Z",
+          "imageUrl": "https://images.unsplash.com/photo-1515162816999-a0c47dc192f7?auto=format&fit=crop&w=800&q=80",
+          "description": "Pothole on 1st Avenue near coffee shop.",
+          "location": {
+            "lat": 37.7725,
+            "lng": -122.4139,
+            "address": "210 1st Avenue",
+            "zone": "Commercial Center",
+            "landmark": "Roast Coffee Co."
+          },
+          "aiAnalysis": {
+            "detectedIssue": "Pothole",
+            "confidence": 91,
+            "observations": "Surface pothole cavity in asphalt.",
+            "estimatedDamageLevel": "Minor",
+            "hazardClassification": "Minor vehicular roughness",
+            "isRealAiCall": true,
+            "modelUsed": "gemini-3.8-flash"
+          },
+          "severity": {
+            "score": 42,
+            "level": "Medium",
+            "contributingFactors": [
+              {
+                "factor": "Infrastructure Baseline",
+                "impact": 65,
+                "description": "Pothole"
+              },
+              {
+                "factor": "Visual Damage Extent",
+                "impact": -15,
+                "description": "Minor cavity"
+              },
+              {
+                "factor": "Zone Vulnerability",
+                "impact": 6,
+                "description": "Commercial Center"
+              }
+            ]
+          },
+          "linkedIncidentId": "INC-2026-112",
+          "status": "Resolved",
+          "isDemo": true
+        },
+        {
+          "id": "REP-2026-225",
+          "timestamp": "2026-09-29T11:00:00Z",
+          "imageUrl": "https://images.unsplash.com/photo-1515162816999-a0c47dc192f7?auto=format&fit=crop&w=800&q=80",
+          "description": "Pothole in front of Roast Coffee.",
+          "location": {
+            "lat": 37.772400000000005,
+            "lng": -122.4138,
+            "address": "214 1st Avenue",
+            "zone": "Commercial Center",
+            "landmark": "Roast Coffee Co."
+          },
+          "aiAnalysis": {
+            "detectedIssue": "Pothole",
+            "confidence": 90,
+            "observations": "Asphalt cavity.",
+            "estimatedDamageLevel": "Minor",
+            "hazardClassification": "Surface defect",
+            "isRealAiCall": true,
+            "modelUsed": "gemini-3.8-flash"
+          },
+          "severity": {
+            "score": 42,
+            "level": "Medium",
+            "contributingFactors": [
+              {
+                "factor": "Infrastructure Baseline",
+                "impact": 65,
+                "description": "Pothole"
+              }
+            ]
+          },
+          "linkedIncidentId": "INC-2026-112",
+          "isDuplicate": true,
+          "duplicateProbability": 92,
+          "matchingFactors": [
+            "Geospatial proximity: 14m",
+            "Issue match: Pothole"
+          ],
+          "status": "Resolved",
+          "isDemo": true
+        }
+      ],
+      "status": "Resolved",
+      "createdAt": "2026-09-28T09:15:00Z",
+      "updatedAt": "2026-09-30T16:30:00Z",
+      "recurrenceCount": 0,
+      "aiExplanation": {
+        "summary": "Priority was Low (35/100). The minor asphalt defect was safely repaired with hot-pour mastic asphalt.",
+        "recommendedAction": "Pothole milled and compacted flush with roadway pavement. Completed on 2026-09-30.",
+        "generatedAt": "2026-09-30T16:30:00Z",
+        "modelUsed": "gemini-3.8-flash"
+      },
+      "timeline": [
+        {
+          "id": "TL-112-1",
+          "timestamp": "2026-09-28T09:15:00Z",
+          "status": "Pending",
+          "actor": "Citizen Portal",
+          "notes": "Report submitted."
+        },
+        {
+          "id": "TL-112-2",
+          "timestamp": "2026-09-29T14:00:00Z",
+          "status": "Assigned",
+          "actor": "Dispatch Officer",
+          "notes": "Assigned to patch truck."
+        },
+        {
+          "id": "TL-112-3",
+          "timestamp": "2026-09-30T16:30:00Z",
+          "status": "Resolved",
+          "actor": "Road Patch Crew #5",
+          "notes": "Filled and leveled with hot mastic asphalt."
+        }
+      ],
+      "assignedCrew": "Road Patch Crew #5",
+      "resolutionNotes": "Filled and tamped with hot-mix asphalt. Surface sealed against water ingress.",
+      "isDemo": true
+    }
+  ],
+  "reports": [
+    {
+      "id": "REP-2026-201",
+      "timestamp": "2026-10-04T08:15:00Z",
+      "imageUrl": "https://images.unsplash.com/photo-1515162816999-a0c47dc192f7?auto=format&fit=crop&w=800&q=80",
+      "description": "Huge pothole right outside Westside Elementary school gate. A minivan scraped its bumper dropping off students.",
+      "location": {
+        "lat": 37.778400000000005,
+        "lng": -122.42219999999999,
+        "address": "240 Elm St, near Westside Elementary Gate 1",
+        "zone": "School Zone",
+        "landmark": "Westside Elementary School"
+      },
+      "aiAnalysis": {
+        "detectedIssue": "Pothole",
+        "confidence": 96,
+        "observations": "Substantial asphalt depression (~14cm depth, 65cm width) with jagged aggregate edges directly in primary school dropoff lane.",
+        "estimatedDamageLevel": "Severe",
+        "hazardClassification": "Severe vehicular rim impact and student crossing danger",
+        "detectedRegions": [
+          {
+            "x": 22,
+            "y": 38,
+            "width": 56,
+            "height": 42,
+            "label": "Deep asphalt cavity"
+          }
+        ],
+        "isRealAiCall": true,
+        "modelUsed": "gemini-3.8-flash"
+      },
+      "severity": {
+        "score": 88,
+        "level": "Critical",
+        "contributingFactors": [
+          {
+            "factor": "Infrastructure Baseline",
+            "impact": 65,
+            "description": "Pothole on active transit corridor"
+          },
+          {
+            "factor": "Visual Damage Extent",
+            "impact": 18,
+            "description": "Severe cratering with exposed base gravel"
+          },
+          {
+            "factor": "Zone Vulnerability",
+            "impact": 14,
+            "description": "School Zone: Child pedestrian vulnerability"
+          }
+        ]
+      },
+      "linkedIncidentId": "INC-2026-101",
+      "status": "Verified",
+      "isDemo": true
+    },
+    {
+      "id": "REP-2026-202",
+      "timestamp": "2026-10-04T09:40:00Z",
+      "imageUrl": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=800&q=80",
+      "description": "Deep crater on Elm Street by the school crosswalk. Cyclist almost fell this morning.",
+      "location": {
+        "lat": 37.7785,
+        "lng": -122.4221,
+        "address": "248 Elm St, near crosswalk",
+        "zone": "School Zone",
+        "landmark": "School Pedestrian Crosswalk"
+      },
+      "aiAnalysis": {
+        "detectedIssue": "Pothole",
+        "confidence": 94,
+        "observations": "Pothole along pedestrian crossing approach with severe asphalt loss and loose gravel.",
+        "estimatedDamageLevel": "Severe",
+        "hazardClassification": "Cyclist spill hazard and vehicle wheel damage",
+        "detectedRegions": [
+          {
+            "x": 28,
+            "y": 40,
+            "width": 48,
+            "height": 38,
+            "label": "Road crater"
+          }
+        ],
+        "isRealAiCall": true,
+        "modelUsed": "gemini-3.8-flash"
+      },
+      "severity": {
+        "score": 87,
+        "level": "Critical",
+        "contributingFactors": [
+          {
+            "factor": "Infrastructure Baseline",
+            "impact": 65,
+            "description": "Pothole baseline hazard"
+          },
+          {
+            "factor": "Visual Damage Extent",
+            "impact": 18,
+            "description": "Severe road surface puncture"
+          },
+          {
+            "factor": "Zone Vulnerability",
+            "impact": 14,
+            "description": "School Zone proximity"
+          }
+        ]
+      },
+      "linkedIncidentId": "INC-2026-101",
+      "isDuplicate": true,
+      "duplicateProbability": 95,
+      "matchingFactors": [
+        "Geospatial proximity: 18m from INC-2026-101",
+        "Identical hazard type: Pothole",
+        "Corroborating landmarks: \"school\", \"crosswalk\""
+      ],
+      "status": "Verified",
+      "isDemo": true
+    },
+    {
+      "id": "REP-2026-203",
+      "timestamp": "2026-10-04T13:20:00Z",
+      "imageUrl": "https://images.unsplash.com/photo-1515162816999-a0c47dc192f7?auto=format&fit=crop&w=800&q=80",
+      "description": "Broken pavement crater outside school gate 2. Water accumulating inside it.",
+      "location": {
+        "lat": 37.7783,
+        "lng": -122.42229999999999,
+        "address": "Elm St opposite Gate 2",
+        "zone": "School Zone",
+        "landmark": "Westside Gate 2"
+      },
+      "aiAnalysis": {
+        "detectedIssue": "Pothole",
+        "confidence": 91,
+        "observations": "Submerged pothole crater causing puddle formation and hidden wheel hazard.",
+        "estimatedDamageLevel": "Severe",
+        "hazardClassification": "Concealed cavity danger",
+        "isRealAiCall": true,
+        "modelUsed": "gemini-3.8-flash"
+      },
+      "severity": {
+        "score": 88,
+        "level": "Critical",
+        "contributingFactors": [
+          {
+            "factor": "Infrastructure Baseline",
+            "impact": 65,
+            "description": "Pothole baseline"
+          },
+          {
+            "factor": "Visual Damage Extent",
+            "impact": 18,
+            "description": "Severe cavity with standing water"
+          },
+          {
+            "factor": "Zone Vulnerability",
+            "impact": 14,
+            "description": "School Zone hazard"
+          }
+        ]
+      },
+      "linkedIncidentId": "INC-2026-101",
+      "isDuplicate": true,
+      "duplicateProbability": 92,
+      "matchingFactors": [
+        "Geospatial proximity: 24m from INC-2026-101",
+        "Matching issue: Pothole",
+        "Matching civic zone: School Zone"
+      ],
+      "status": "Verified",
+      "isDemo": true
+    },
+    {
+      "id": "REP-2026-204",
+      "timestamp": "2026-10-05T07:50:00Z",
+      "imageUrl": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=800&q=80",
+      "description": "School bus had to swerve around large pothole on Elm. Very dangerous during morning rush.",
+      "location": {
+        "lat": 37.778400000000005,
+        "lng": -122.42219999999999,
+        "address": "240 Elm St",
+        "zone": "School Zone",
+        "landmark": "Westside Elementary"
+      },
+      "aiAnalysis": {
+        "detectedIssue": "Pothole",
+        "confidence": 95,
+        "observations": "Road pothole cavity in center of westbound traffic lane.",
+        "estimatedDamageLevel": "Severe",
+        "hazardClassification": "Transit vehicle evasion risk",
+        "isRealAiCall": true,
+        "modelUsed": "gemini-3.8-flash"
+      },
+      "severity": {
+        "score": 88,
+        "level": "Critical",
+        "contributingFactors": [
+          {
+            "factor": "Infrastructure Baseline",
+            "impact": 65,
+            "description": "Pothole baseline"
+          },
+          {
+            "factor": "Visual Damage Extent",
+            "impact": 18,
+            "description": "Severe road cavity"
+          },
+          {
+            "factor": "Zone Vulnerability",
+            "impact": 14,
+            "description": "School Zone"
+          }
+        ]
+      },
+      "linkedIncidentId": "INC-2026-101",
+      "isDuplicate": true,
+      "duplicateProbability": 98,
+      "matchingFactors": [
+        "Geospatial proximity: 6m from INC-2026-101",
+        "Matching issue: Pothole",
+        "Keyword match: \"school bus\", \"Elm\", \"pothole\""
+      ],
+      "status": "Verified",
+      "isDemo": true
+    },
+    {
+      "id": "REP-2026-205",
+      "timestamp": "2026-10-04T11:00:00Z",
+      "imageUrl": "https://images.unsplash.com/photo-1541888946425-d0fbb1861593?auto=format&fit=crop&w=800&q=80",
+      "description": "Stormwater drain overflowing with foul sewage water near Market Plaza entrance. Water spreading across sidewalk.",
+      "location": {
+        "lat": 37.770700000000005,
+        "lng": -122.41629999999999,
+        "address": "520 Market St, Market Plaza",
+        "zone": "Commercial Center",
+        "landmark": "Central Market Plaza"
+      },
+      "aiAnalysis": {
+        "detectedIssue": "Overflowing Drain",
+        "confidence": 97,
+        "observations": "Submerged drain grate with heavy effluent backflow, oily residue, and localized sidewalk flooding.",
+        "estimatedDamageLevel": "Severe",
+        "hazardClassification": "Public health biohazard and retail corridor water damage",
+        "isRealAiCall": true,
+        "modelUsed": "gemini-3.8-flash"
+      },
+      "severity": {
+        "score": 86,
+        "level": "Critical",
+        "contributingFactors": [
+          {
+            "factor": "Infrastructure Baseline",
+            "impact": 70,
+            "description": "Drainage overflow sanitation hazard"
+          },
+          {
+            "factor": "Visual Damage Extent",
+            "impact": 18,
+            "description": "Active backflow and standing contaminated water"
+          },
+          {
+            "factor": "Zone Vulnerability",
+            "impact": 6,
+            "description": "Commercial retail center foot traffic"
+          }
+        ]
+      },
+      "linkedIncidentId": "INC-2026-102",
+      "status": "Assigned",
+      "isDemo": true
+    },
+    {
+      "id": "REP-2026-206",
+      "timestamp": "2026-10-04T14:15:00Z",
+      "imageUrl": "https://images.unsplash.com/photo-1541888946425-d0fbb1861593?auto=format&fit=crop&w=800&q=80",
+      "description": "Terrible smell and dirty water bubbling out of the sewer on Market Street in front of the bakery.",
+      "location": {
+        "lat": 37.7708,
+        "lng": -122.4161,
+        "address": "528 Market St",
+        "zone": "Commercial Center",
+        "landmark": "Market Plaza Bakery"
+      },
+      "aiAnalysis": {
+        "detectedIssue": "Overflowing Drain",
+        "confidence": 93,
+        "observations": "Sewer backflow emerging around curb gutter with visible debris.",
+        "estimatedDamageLevel": "Severe",
+        "hazardClassification": "Urban drainage blockage and retail contamination",
+        "isRealAiCall": true,
+        "modelUsed": "gemini-3.8-flash"
+      },
+      "severity": {
+        "score": 86,
+        "level": "Critical",
+        "contributingFactors": [
+          {
+            "factor": "Infrastructure Baseline",
+            "impact": 70,
+            "description": "Drainage hazard"
+          },
+          {
+            "factor": "Visual Damage Extent",
+            "impact": 18,
+            "description": "Severe runoff"
+          },
+          {
+            "factor": "Zone Vulnerability",
+            "impact": 6,
+            "description": "Commercial Center"
+          }
+        ]
+      },
+      "linkedIncidentId": "INC-2026-102",
+      "isDuplicate": true,
+      "duplicateProbability": 91,
+      "matchingFactors": [
+        "Geospatial proximity: 22m",
+        "Issue match: Overflowing Drain",
+        "Shared landmark: Market Street"
+      ],
+      "status": "Assigned",
+      "isDemo": true
+    },
+    {
+      "id": "REP-2026-207",
+      "timestamp": "2026-10-05T08:30:00Z",
+      "imageUrl": "https://images.unsplash.com/photo-1541888946425-d0fbb1861593?auto=format&fit=crop&w=800&q=80",
+      "description": "Sewer water has flooded the bus boarding curb. Pedestrians forced into vehicle traffic.",
+      "location": {
+        "lat": 37.7706,
+        "lng": -122.4164,
+        "address": "516 Market St Bus Stop",
+        "zone": "Commercial Center",
+        "landmark": "Market Plaza Transit Stop"
+      },
+      "aiAnalysis": {
+        "detectedIssue": "Overflowing Drain",
+        "confidence": 96,
+        "observations": "Extensive curb pooling obstructing public bus boarding landing.",
+        "estimatedDamageLevel": "Severe",
+        "hazardClassification": "Transit boarding obstruction and slip risk",
+        "isRealAiCall": true,
+        "modelUsed": "gemini-3.8-flash"
+      },
+      "severity": {
+        "score": 86,
+        "level": "Critical",
+        "contributingFactors": [
+          {
+            "factor": "Infrastructure Baseline",
+            "impact": 70,
+            "description": "Drainage overflow"
+          },
+          {
+            "factor": "Visual Damage Extent",
+            "impact": 18,
+            "description": "Severe flooding"
+          },
+          {
+            "factor": "Zone Vulnerability",
+            "impact": 6,
+            "description": "Commercial/Transit curb"
+          }
+        ]
+      },
+      "linkedIncidentId": "INC-2026-102",
+      "isDuplicate": true,
+      "duplicateProbability": 89,
+      "matchingFactors": [
+        "Geospatial proximity: 19m",
+        "Identical classification: Overflowing Drain"
+      ],
+      "status": "Assigned",
+      "isDemo": true
+    },
+    {
+      "id": "REP-2026-208",
+      "timestamp": "2026-10-03T20:30:00Z",
+      "imageUrl": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=800&q=80",
+      "description": "Streetlight pole #12 is completely black on Pinehurst Ave. Entire block is pitch dark.",
+      "location": {
+        "lat": 37.78,
+        "lng": -122.4152,
+        "address": "810 Pinehurst Ave",
+        "zone": "Residential Area",
+        "landmark": "Pinehurst Park Corner"
+      },
+      "aiAnalysis": {
+        "detectedIssue": "Broken Streetlight",
+        "confidence": 94,
+        "observations": "Non-functioning sodium luminaire fixture resulting in zero ground illumination at cross street.",
+        "estimatedDamageLevel": "Moderate",
+        "hazardClassification": "Nocturnal blindspot and pedestrian personal safety vulnerability",
+        "isRealAiCall": true,
+        "modelUsed": "gemini-3.8-flash"
+      },
+      "severity": {
+        "score": 47,
+        "level": "Medium",
+        "contributingFactors": [
+          {
+            "factor": "Infrastructure Baseline",
+            "impact": 45,
+            "description": "Broken streetlight baseline hazard"
+          },
+          {
+            "factor": "Visual Damage Extent",
+            "impact": 0,
+            "description": "Moderate outage profile"
+          },
+          {
+            "factor": "Zone Vulnerability",
+            "impact": 2,
+            "description": "Residential street context"
+          }
+        ]
+      },
+      "linkedIncidentId": "INC-2026-103",
+      "status": "In Progress",
+      "isDemo": true
+    },
+    {
+      "id": "REP-2026-209",
+      "timestamp": "2026-10-04T21:10:00Z",
+      "imageUrl": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=800&q=80",
+      "description": "Pitch dark corner on Pinehurst near the playground. Residents feel unsafe walking dogs after 7pm.",
+      "location": {
+        "lat": 37.780100000000004,
+        "lng": -122.4151,
+        "address": "816 Pinehurst Ave",
+        "zone": "Residential Area",
+        "landmark": "Pinehurst Community Playground"
+      },
+      "aiAnalysis": {
+        "detectedIssue": "Broken Streetlight",
+        "confidence": 92,
+        "observations": "Extinguished street luminaire adjacent to public park path.",
+        "estimatedDamageLevel": "Moderate",
+        "hazardClassification": "Pedestrian nocturnal visibility hazard",
+        "isRealAiCall": true,
+        "modelUsed": "gemini-3.8-flash"
+      },
+      "severity": {
+        "score": 47,
+        "level": "Medium",
+        "contributingFactors": [
+          {
+            "factor": "Infrastructure Baseline",
+            "impact": 45,
+            "description": "Streetlight outage"
+          },
+          {
+            "factor": "Zone Vulnerability",
+            "impact": 2,
+            "description": "Residential Area"
+          }
+        ]
+      },
+      "linkedIncidentId": "INC-2026-103",
+      "isDuplicate": true,
+      "duplicateProbability": 94,
+      "matchingFactors": [
+        "Geospatial proximity: 15m",
+        "Issue match: Broken Streetlight",
+        "Shared landmark: Pinehurst"
+      ],
+      "status": "In Progress",
+      "isDemo": true
+    },
+    {
+      "id": "REP-2026-210",
+      "timestamp": "2026-10-05T06:15:00Z",
+      "imageUrl": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=800&q=80",
+      "description": "Streetlight pole head is dangling and unlit. Looks like high wind damaged the bracket.",
+      "location": {
+        "lat": 37.779900000000005,
+        "lng": -122.4153,
+        "address": "804 Pinehurst Ave",
+        "zone": "Residential Area",
+        "landmark": "Pinehurst Park Entrance"
+      },
+      "aiAnalysis": {
+        "detectedIssue": "Broken Streetlight",
+        "confidence": 95,
+        "observations": "Fixture bracket dislodged and unpowered luminaire head.",
+        "estimatedDamageLevel": "Severe",
+        "hazardClassification": "Structural overhead detachment risk and outage",
+        "isRealAiCall": true,
+        "modelUsed": "gemini-3.8-flash"
+      },
+      "severity": {
+        "score": 65,
+        "level": "High",
+        "contributingFactors": [
+          {
+            "factor": "Infrastructure Baseline",
+            "impact": 45,
+            "description": "Streetlight outage"
+          },
+          {
+            "factor": "Visual Damage Extent",
+            "impact": 18,
+            "description": "Detached luminaire fixture"
+          },
+          {
+            "factor": "Zone Vulnerability",
+            "impact": 2,
+            "description": "Residential Area"
+          }
+        ]
+      },
+      "linkedIncidentId": "INC-2026-103",
+      "isDuplicate": true,
+      "duplicateProbability": 88,
+      "matchingFactors": [
+        "Geospatial proximity: 21m",
+        "Issue match: Broken Streetlight"
+      ],
+      "status": "In Progress",
+      "isDemo": true
+    },
+    {
+      "id": "REP-2026-211",
+      "timestamp": "2026-10-02T16:45:00Z",
+      "imageUrl": "https://images.unsplash.com/photo-1584463699042-45a8d9a4f4d2?auto=format&fit=crop&w=800&q=80",
+      "description": "Massive concrete sidewalk slab lifted by tree root outside Metro Station Exit B. Sits 3 inches high, seen multiple people trip.",
+      "location": {
+        "lat": 37.7731,
+        "lng": -122.4249,
+        "address": "100 Metro Plaza (Exit B)",
+        "zone": "Transit Hub",
+        "landmark": "Civic Metro Station Exit B"
+      },
+      "aiAnalysis": {
+        "detectedIssue": "Damaged Sidewalk",
+        "confidence": 95,
+        "observations": "Heaved concrete slab displacement (>7cm vertical offset) forming severe trip ledge across busy commuter path.",
+        "estimatedDamageLevel": "Severe",
+        "hazardClassification": "Severe ADA non-compliance and pedestrian fall hazard",
+        "isRealAiCall": true,
+        "modelUsed": "gemini-3.8-flash"
+      },
+      "severity": {
+        "score": 80,
+        "level": "Critical",
+        "contributingFactors": [
+          {
+            "factor": "Infrastructure Baseline",
+            "impact": 52,
+            "description": "Sidewalk displacement trip hazard"
+          },
+          {
+            "factor": "Visual Damage Extent",
+            "impact": 18,
+            "description": "Severe 7cm vertical slab heave"
+          },
+          {
+            "factor": "Zone Vulnerability",
+            "impact": 10,
+            "description": "Transit Hub high pedestrian throughput"
+          }
+        ]
+      },
+      "linkedIncidentId": "INC-2026-104",
+      "status": "Verified",
+      "isDemo": true
+    },
+    {
+      "id": "REP-2026-212",
+      "timestamp": "2026-10-03T08:10:00Z",
+      "imageUrl": "https://images.unsplash.com/photo-1584463699042-45a8d9a4f4d2?auto=format&fit=crop&w=800&q=80",
+      "description": "Broken cracked pavement right in front of metro turnstiles entrance. Wheelchairs cannot pass without getting stuck.",
+      "location": {
+        "lat": 37.773,
+        "lng": -122.42479999999999,
+        "address": "104 Metro Plaza",
+        "zone": "Transit Hub",
+        "landmark": "Metro Plaza Main Concourse"
+      },
+      "aiAnalysis": {
+        "detectedIssue": "Damaged Sidewalk",
+        "confidence": 96,
+        "observations": "Fractured sidewalk slabs blocking accessibility access route.",
+        "estimatedDamageLevel": "Severe",
+        "hazardClassification": "Wheelchair barrier and pedestrian obstruction",
+        "isRealAiCall": true,
+        "modelUsed": "gemini-3.8-flash"
+      },
+      "severity": {
+        "score": 80,
+        "level": "Critical",
+        "contributingFactors": [
+          {
+            "factor": "Infrastructure Baseline",
+            "impact": 52,
+            "description": "Sidewalk hazard"
+          },
+          {
+            "factor": "Visual Damage Extent",
+            "impact": 18,
+            "description": "Severe slab fracture"
+          },
+          {
+            "factor": "Zone Vulnerability",
+            "impact": 10,
+            "description": "Transit Hub"
+          }
+        ]
+      },
+      "linkedIncidentId": "INC-2026-104",
+      "isDuplicate": true,
+      "duplicateProbability": 93,
+      "matchingFactors": [
+        "Geospatial proximity: 14m",
+        "Issue match: Damaged Sidewalk",
+        "Keyword: Metro Plaza"
+      ],
+      "status": "Verified",
+      "isDemo": true
+    },
+    {
+      "id": "REP-2026-213",
+      "timestamp": "2026-10-04T17:20:00Z",
+      "imageUrl": "https://images.unsplash.com/photo-1584463699042-45a8d9a4f4d2?auto=format&fit=crop&w=800&q=80",
+      "description": "Elderly lady tripped on the uneven concrete at Metro exit. Dangerous during evening commute rush.",
+      "location": {
+        "lat": 37.7732,
+        "lng": -122.425,
+        "address": "96 Metro Plaza",
+        "zone": "Transit Hub",
+        "landmark": "Civic Metro Bus Bay"
+      },
+      "aiAnalysis": {
+        "detectedIssue": "Damaged Sidewalk",
+        "confidence": 94,
+        "observations": "Raised concrete edge creating recurrent pedestrian stumble incident.",
+        "estimatedDamageLevel": "Severe",
+        "hazardClassification": "Commuter pedestrian safety hazard",
+        "isRealAiCall": true,
+        "modelUsed": "gemini-3.8-flash"
+      },
+      "severity": {
+        "score": 80,
+        "level": "Critical",
+        "contributingFactors": [
+          {
+            "factor": "Infrastructure Baseline",
+            "impact": 52,
+            "description": "Sidewalk hazard"
+          },
+          {
+            "factor": "Visual Damage Extent",
+            "impact": 18,
+            "description": "Severe displacement"
+          },
+          {
+            "factor": "Zone Vulnerability",
+            "impact": 10,
+            "description": "Transit Hub"
+          }
+        ]
+      },
+      "linkedIncidentId": "INC-2026-104",
+      "isDuplicate": true,
+      "duplicateProbability": 91,
+      "matchingFactors": [
+        "Geospatial proximity: 23m",
+        "Issue match: Damaged Sidewalk",
+        "Corroborating trip report"
+      ],
+      "status": "Verified",
+      "isDemo": true
+    },
+    {
+      "id": "REP-2026-214",
+      "timestamp": "2026-10-04T15:00:00Z",
+      "imageUrl": "https://images.unsplash.com/photo-1530587191325-3db32d826c18?auto=format&fit=crop&w=800&q=80",
+      "description": "Bulk furniture, broken pallets, and overflowing bags dumped in alleyway behind 8th Street shops.",
+      "location": {
+        "lat": 37.777100000000004,
+        "lng": -122.41319999999999,
+        "address": "Alley behind 320 8th Street",
+        "zone": "Alleyway / Minor Street",
+        "landmark": "8th St Commercial Alley"
+      },
+      "aiAnalysis": {
+        "detectedIssue": "Garbage Accumulation",
+        "confidence": 96,
+        "observations": "Substantial solid waste accumulation blocking secondary service alleyway with organic decomposition.",
+        "estimatedDamageLevel": "Moderate",
+        "hazardClassification": "Pest vector proliferation and fire load hazard",
+        "isRealAiCall": true,
+        "modelUsed": "gemini-3.8-flash"
+      },
+      "severity": {
+        "score": 40,
+        "level": "Medium",
+        "contributingFactors": [
+          {
+            "factor": "Infrastructure Baseline",
+            "impact": 42,
+            "description": "Solid waste accumulation baseline"
+          },
+          {
+            "factor": "Visual Damage Extent",
+            "impact": 0,
+            "description": "Moderate bulk debris heap"
+          },
+          {
+            "factor": "Zone Vulnerability",
+            "impact": -4,
+            "description": "Alleyway with low direct traffic"
+          }
+        ]
+      },
+      "linkedIncidentId": "INC-2026-105",
+      "status": "Pending",
+      "isDemo": true
+    },
+    {
+      "id": "REP-2026-215",
+      "timestamp": "2026-10-05T09:15:00Z",
+      "imageUrl": "https://images.unsplash.com/photo-1530587191325-3db32d826c18?auto=format&fit=crop&w=800&q=80",
+      "description": "Trash pile is growing on 8th st alley. Rats spotted near the discarded mattresses.",
+      "location": {
+        "lat": 37.7772,
+        "lng": -122.41329999999999,
+        "address": "326 8th Street Alley",
+        "zone": "Alleyway / Minor Street",
+        "landmark": "8th St Alleyway Service Gate"
+      },
+      "aiAnalysis": {
+        "detectedIssue": "Garbage Accumulation",
+        "confidence": 93,
+        "observations": "Discarded bulk mattress and domestic waste sacks spilling into lane.",
+        "estimatedDamageLevel": "Moderate",
+        "hazardClassification": "Sanitation hazard and vermin attraction",
+        "isRealAiCall": true,
+        "modelUsed": "gemini-3.8-flash"
+      },
+      "severity": {
+        "score": 40,
+        "level": "Medium",
+        "contributingFactors": [
+          {
+            "factor": "Infrastructure Baseline",
+            "impact": 42,
+            "description": "Garbage baseline"
+          },
+          {
+            "factor": "Zone Vulnerability",
+            "impact": -4,
+            "description": "Alleyway"
+          }
+        ]
+      },
+      "linkedIncidentId": "INC-2026-105",
+      "isDuplicate": true,
+      "duplicateProbability": 95,
+      "matchingFactors": [
+        "Geospatial proximity: 16m",
+        "Issue match: Garbage Accumulation",
+        "Keyword: 8th Street alley"
+      ],
+      "status": "Pending",
+      "isDemo": true
+    },
+    {
+      "id": "REP-2026-216",
+      "timestamp": "2026-10-05T06:30:00Z",
+      "imageUrl": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=800&q=80",
+      "description": "Stop sign knocked down completely at Maple & Highfield intersection. Cars speeding through without stopping!",
+      "location": {
+        "lat": 37.7764,
+        "lng": -122.4266,
+        "address": "Intersection of Maple Ave & Highfield Blvd",
+        "zone": "Arterial Road",
+        "landmark": "Maple & Highfield Intersection"
+      },
+      "aiAnalysis": {
+        "detectedIssue": "Damaged Signage",
+        "confidence": 97,
+        "observations": "Octagonal STOP sign post severed at base plate and lying prone on curb, leaving 4-way intersection unregulated.",
+        "estimatedDamageLevel": "Severe",
+        "hazardClassification": "Critical collision risk and right-of-way failure",
+        "isRealAiCall": true,
+        "modelUsed": "gemini-3.8-flash"
+      },
+      "severity": {
+        "score": 85,
+        "level": "Critical",
+        "contributingFactors": [
+          {
+            "factor": "Infrastructure Baseline",
+            "impact": 55,
+            "description": "Traffic regulatory signage failure"
+          },
+          {
+            "factor": "Visual Damage Extent",
+            "impact": 18,
+            "description": "Complete structural knockdown"
+          },
+          {
+            "factor": "Zone Vulnerability",
+            "impact": 12,
+            "description": "Arterial multilane corridor"
+          }
+        ]
+      },
+      "linkedIncidentId": "INC-2026-106",
+      "status": "Assigned",
+      "isDemo": true
+    },
+    {
+      "id": "REP-2026-217",
+      "timestamp": "2026-10-05T07:10:00Z",
+      "imageUrl": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=800&q=80",
+      "description": "Traffic sign flattened on Maple Blvd. Almost saw a T-bone crash 5 minutes ago.",
+      "location": {
+        "lat": 37.776500000000006,
+        "lng": -122.42649999999999,
+        "address": "Maple Blvd corner Highfield",
+        "zone": "Arterial Road",
+        "landmark": "Highfield Corner"
+      },
+      "aiAnalysis": {
+        "detectedIssue": "Damaged Signage",
+        "confidence": 95,
+        "observations": "Downed traffic control post creating intersection confusion.",
+        "estimatedDamageLevel": "Severe",
+        "hazardClassification": "Imminent broadside crash hazard",
+        "isRealAiCall": true,
+        "modelUsed": "gemini-3.8-flash"
+      },
+      "severity": {
+        "score": 85,
+        "level": "Critical",
+        "contributingFactors": [
+          {
+            "factor": "Infrastructure Baseline",
+            "impact": 55,
+            "description": "Traffic signage"
+          },
+          {
+            "factor": "Visual Damage Extent",
+            "impact": 18,
+            "description": "Knockdown"
+          },
+          {
+            "factor": "Zone Vulnerability",
+            "impact": 12,
+            "description": "Arterial Road"
+          }
+        ]
+      },
+      "linkedIncidentId": "INC-2026-106",
+      "isDuplicate": true,
+      "duplicateProbability": 96,
+      "matchingFactors": [
+        "Geospatial proximity: 14m",
+        "Issue match: Damaged Signage",
+        "Keyword: Maple, Highfield"
+      ],
+      "status": "Assigned",
+      "isDemo": true
+    },
+    {
+      "id": "REP-2026-218",
+      "timestamp": "2026-10-03T14:00:00Z",
+      "imageUrl": "https://images.unsplash.com/photo-1515162816999-a0c47dc192f7?auto=format&fit=crop&w=800&q=80",
+      "description": "Long asphalt fracture cracking across lane 2 on Grand Expressway.",
+      "location": {
+        "lat": 37.7687,
+        "lng": -122.4212,
+        "address": "Grand Expressway eastbound mile 4.2",
+        "zone": "Arterial Road",
+        "landmark": "Overpass 4"
+      },
+      "aiAnalysis": {
+        "detectedIssue": "Road Damage",
+        "confidence": 89,
+        "observations": "Transverse thermal crack measuring 4.5m with minor edge ravelling.",
+        "estimatedDamageLevel": "Moderate",
+        "hazardClassification": "High-speed vehicular vibration and moisture intrusion",
+        "isRealAiCall": true,
+        "modelUsed": "gemini-3.8-flash"
+      },
+      "severity": {
+        "score": 72,
+        "level": "High",
+        "contributingFactors": [
+          {
+            "factor": "Infrastructure Baseline",
+            "impact": 60,
+            "description": "Road structural damage"
+          },
+          {
+            "factor": "Zone Vulnerability",
+            "impact": 12,
+            "description": "Arterial Road"
+          }
+        ]
+      },
+      "linkedIncidentId": "INC-2026-107",
+      "status": "Verified",
+      "isDemo": true
+    },
+    {
+      "id": "REP-2026-219",
+      "timestamp": "2026-10-04T10:30:00Z",
+      "imageUrl": "https://images.unsplash.com/photo-1515162816999-a0c47dc192f7?auto=format&fit=crop&w=800&q=80",
+      "description": "Crack on Grand Expressway is opening wider after heavy rain.",
+      "location": {
+        "lat": 37.7688,
+        "lng": -122.4211,
+        "address": "Grand Expressway mile 4.2",
+        "zone": "Arterial Road",
+        "landmark": "Overpass 4"
+      },
+      "aiAnalysis": {
+        "detectedIssue": "Road Damage",
+        "confidence": 91,
+        "observations": "Expanding asphalt crack opening.",
+        "estimatedDamageLevel": "Moderate",
+        "hazardClassification": "Pavement degradation",
+        "isRealAiCall": true,
+        "modelUsed": "gemini-3.8-flash"
+      },
+      "severity": {
+        "score": 72,
+        "level": "High",
+        "contributingFactors": [
+          {
+            "factor": "Infrastructure Baseline",
+            "impact": 60,
+            "description": "Road damage"
+          },
+          {
+            "factor": "Zone Vulnerability",
+            "impact": 12,
+            "description": "Arterial Road"
+          }
+        ]
+      },
+      "linkedIncidentId": "INC-2026-107",
+      "isDuplicate": true,
+      "duplicateProbability": 92,
+      "matchingFactors": [
+        "Geospatial proximity: 20m",
+        "Issue match: Road Damage"
+      ],
+      "status": "Verified",
+      "isDemo": true
+    },
+    {
+      "id": "REP-2026-220",
+      "timestamp": "2026-10-05T08:10:00Z",
+      "imageUrl": "https://images.unsplash.com/photo-1541888946425-d0fbb1861593?auto=format&fit=crop&w=800&q=80",
+      "description": "Catch basin completely clogged with fallen leaves and silt. Street gutter standing water is 4 inches deep.",
+      "location": {
+        "lat": 37.779700000000005,
+        "lng": -122.4259,
+        "address": "412 Riverview Road",
+        "zone": "Residential Area",
+        "landmark": "Riverview Cul-de-sac"
+      },
+      "aiAnalysis": {
+        "detectedIssue": "Overflowing Drain",
+        "confidence": 88,
+        "observations": "Storm grate obstructed by foliage debris resulting in localized curb pooling.",
+        "estimatedDamageLevel": "Minor",
+        "hazardClassification": "Localized gutter waterlogging",
+        "isRealAiCall": true,
+        "modelUsed": "gemini-3.8-flash"
+      },
+      "severity": {
+        "score": 57,
+        "level": "Medium",
+        "contributingFactors": [
+          {
+            "factor": "Infrastructure Baseline",
+            "impact": 70,
+            "description": "Drainage baseline"
+          },
+          {
+            "factor": "Visual Damage Extent",
+            "impact": -15,
+            "description": "Minor surface foliage blockage"
+          },
+          {
+            "factor": "Zone Vulnerability",
+            "impact": 2,
+            "description": "Residential street"
+          }
+        ]
+      },
+      "linkedIncidentId": "INC-2026-108",
+      "status": "Pending",
+      "isDemo": true
+    },
+    {
+      "id": "REP-2026-221",
+      "timestamp": "2026-10-01T21:00:00Z",
+      "imageUrl": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=800&q=80",
+      "description": "Streetlight pole 44 on Oak Lane is flickering constantly like a strobe light.",
+      "location": {
+        "lat": 37.778800000000004,
+        "lng": -122.41749999999999,
+        "address": "150 Oak Lane",
+        "zone": "Residential Area",
+        "landmark": "Oak Lane Community Garden"
+      },
+      "aiAnalysis": {
+        "detectedIssue": "Broken Streetlight",
+        "confidence": 90,
+        "observations": "Intermittent luminaire ballast flicker.",
+        "estimatedDamageLevel": "Minor",
+        "hazardClassification": "Nuisance flicker and partial lighting loss",
+        "isRealAiCall": true,
+        "modelUsed": "gemini-3.8-flash"
+      },
+      "severity": {
+        "score": 32,
+        "level": "Low",
+        "contributingFactors": [
+          {
+            "factor": "Infrastructure Baseline",
+            "impact": 45,
+            "description": "Streetlight baseline"
+          },
+          {
+            "factor": "Visual Damage Extent",
+            "impact": -15,
+            "description": "Minor ballast flicker"
+          },
+          {
+            "factor": "Zone Vulnerability",
+            "impact": 2,
+            "description": "Residential street"
+          }
+        ]
+      },
+      "linkedIncidentId": "INC-2026-109",
+      "status": "Resolved",
+      "isDemo": true
+    },
+    {
+      "id": "REP-2026-222",
+      "timestamp": "2026-10-04T07:45:00Z",
+      "imageUrl": "https://images.unsplash.com/photo-1515162816999-a0c47dc192f7?auto=format&fit=crop&w=800&q=80",
+      "description": "Gas company cut a trench across Cedar Lane and filled it with loose gravel. It collapsed 6 inches down.",
+      "location": {
+        "lat": 37.7718,
+        "lng": -122.4233,
+        "address": "78 Cedar Lane",
+        "zone": "Residential Area",
+        "landmark": "Cedar Lane Library Branch"
+      },
+      "aiAnalysis": {
+        "detectedIssue": "Road Damage",
+        "confidence": 93,
+        "observations": "Subsided trench depression across roadway width with uncompacted backfill collapse.",
+        "estimatedDamageLevel": "Severe",
+        "hazardClassification": "Severe axle damage and motorcycle flip hazard",
+        "isRealAiCall": true,
+        "modelUsed": "gemini-3.8-flash"
+      },
+      "severity": {
+        "score": 75,
+        "level": "High",
+        "contributingFactors": [
+          {
+            "factor": "Infrastructure Baseline",
+            "impact": 60,
+            "description": "Road structural damage"
+          },
+          {
+            "factor": "Visual Damage Extent",
+            "impact": 18,
+            "description": "Severe trench subsidence"
+          },
+          {
+            "factor": "Zone Vulnerability",
+            "impact": 2,
+            "description": "Residential street"
+          }
+        ]
+      },
+      "linkedIncidentId": "INC-2026-110",
+      "status": "In Progress",
+      "isDemo": true
+    },
+    {
+      "id": "REP-2026-223",
+      "timestamp": "2026-10-03T11:20:00Z",
+      "imageUrl": "https://images.unsplash.com/photo-1584463699042-45a8d9a4f4d2?auto=format&fit=crop&w=800&q=80",
+      "description": "Zebra stripes at Lincoln Middle School crossing are almost completely worn away by tire traffic.",
+      "location": {
+        "lat": 37.7777,
+        "lng": -122.4245,
+        "address": "500 Lincoln Way",
+        "zone": "School Zone",
+        "landmark": "Lincoln Middle School"
+      },
+      "aiAnalysis": {
+        "detectedIssue": "Road Damage",
+        "confidence": 88,
+        "observations": "Thermoplastic pedestrian crossing paint eroded >80% in vehicle travel path.",
+        "estimatedDamageLevel": "Moderate",
+        "hazardClassification": "Reduced pedestrian crosswalk visibility",
+        "isRealAiCall": true,
+        "modelUsed": "gemini-3.8-flash"
+      },
+      "severity": {
+        "score": 55,
+        "level": "Medium",
+        "contributingFactors": [
+          {
+            "factor": "Infrastructure Baseline",
+            "impact": 60,
+            "description": "Road marking degradation"
+          },
+          {
+            "factor": "Visual Damage Extent",
+            "impact": 0,
+            "description": "Moderate wear profile"
+          },
+          {
+            "factor": "Zone Vulnerability",
+            "impact": 14,
+            "description": "School Zone"
+          }
+        ]
+      },
+      "linkedIncidentId": "INC-2026-111",
+      "status": "Assigned",
+      "isDemo": true
+    },
+    {
+      "id": "REP-2026-224",
+      "timestamp": "2026-09-28T09:15:00Z",
+      "imageUrl": "https://images.unsplash.com/photo-1515162816999-a0c47dc192f7?auto=format&fit=crop&w=800&q=80",
+      "description": "Pothole on 1st Avenue near coffee shop.",
+      "location": {
+        "lat": 37.7725,
+        "lng": -122.4139,
+        "address": "210 1st Avenue",
+        "zone": "Commercial Center",
+        "landmark": "Roast Coffee Co."
+      },
+      "aiAnalysis": {
+        "detectedIssue": "Pothole",
+        "confidence": 91,
+        "observations": "Surface pothole cavity in asphalt.",
+        "estimatedDamageLevel": "Minor",
+        "hazardClassification": "Minor vehicular roughness",
+        "isRealAiCall": true,
+        "modelUsed": "gemini-3.8-flash"
+      },
+      "severity": {
+        "score": 42,
+        "level": "Medium",
+        "contributingFactors": [
+          {
+            "factor": "Infrastructure Baseline",
+            "impact": 65,
+            "description": "Pothole"
+          },
+          {
+            "factor": "Visual Damage Extent",
+            "impact": -15,
+            "description": "Minor cavity"
+          },
+          {
+            "factor": "Zone Vulnerability",
+            "impact": 6,
+            "description": "Commercial Center"
+          }
+        ]
+      },
+      "linkedIncidentId": "INC-2026-112",
+      "status": "Resolved",
+      "isDemo": true
+    },
+    {
+      "id": "REP-2026-225",
+      "timestamp": "2026-09-29T11:00:00Z",
+      "imageUrl": "https://images.unsplash.com/photo-1515162816999-a0c47dc192f7?auto=format&fit=crop&w=800&q=80",
+      "description": "Pothole in front of Roast Coffee.",
+      "location": {
+        "lat": 37.772400000000005,
+        "lng": -122.4138,
+        "address": "214 1st Avenue",
+        "zone": "Commercial Center",
+        "landmark": "Roast Coffee Co."
+      },
+      "aiAnalysis": {
+        "detectedIssue": "Pothole",
+        "confidence": 90,
+        "observations": "Asphalt cavity.",
+        "estimatedDamageLevel": "Minor",
+        "hazardClassification": "Surface defect",
+        "isRealAiCall": true,
+        "modelUsed": "gemini-3.8-flash"
+      },
+      "severity": {
+        "score": 42,
+        "level": "Medium",
+        "contributingFactors": [
+          {
+            "factor": "Infrastructure Baseline",
+            "impact": 65,
+            "description": "Pothole"
+          }
+        ]
+      },
+      "linkedIncidentId": "INC-2026-112",
+      "isDuplicate": true,
+      "duplicateProbability": 92,
+      "matchingFactors": [
+        "Geospatial proximity: 14m",
+        "Issue match: Pothole"
+      ],
+      "status": "Resolved",
+      "isDemo": true
+    }
+  ],
+  "weights": {
+    "severityWeight": 0.4,
+    "reportsCountWeight": 0.2,
+    "locationWeight": 0.15,
+    "recurrenceWeight": 0.1,
+    "publicImpactWeight": 0.15
+  }
+}
